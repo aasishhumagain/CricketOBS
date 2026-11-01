@@ -1,5 +1,128 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>CricketOBS | Scoring desk</title><link rel="stylesheet" href="/static/style.css"><link rel="stylesheet" href="/static/dashboard.css"></head><body class="dashboard"><main class="desk"><header><a class="brand" href="/">CRICKET<span>OBS</span></a><span class="badge">MANUAL SCORING</span><span id="connection">CONNECTING</span></header><div class="topline"><div><div class="eyebrow">LIVE MATCH CONTROL</div><h1>Scoring desk</h1><p>Record each delivery. Your broadcast graphic updates instantly.</p></div><a class="overlay-link" href="/overlay" target="_blank">Open broadcast overlay ↗</a></div>
-<section class="setup panel"><div><label>Home team<input id="team-a" value="Valley Falcons" maxlength="32"></label><label>Away team<input id="team-b" value="Summit Strikers" maxlength="32"></label><label>Overs per innings<input id="match-overs" type="number" value="20" min="1" max="50"></label></div><button class="secondary" id="reset-match">New match / apply setup</button></section>
-<section class="score-panel panel"><div class="score-line"><div><div id="batting" class="eyebrow">Valley Falcons</div><div class="score"><strong id="score">0 / 0</strong><span><b id="overs">0.0</b> overs</span></div></div><div class="score-aside"><span id="innings">INNINGS 1</span><b id="chase">FIRST INNINGS</b><span id="rate">RR 0.00</span></div></div><div id="commentary" class="commentary">Ready. Choose the outcome of the next delivery.</div><div class="recent" id="recent"></div></section>
-<section class="panel scoring"><div class="panel-heading"><div><div class="eyebrow">DELIVERY CONTROLS</div><h2>What happened?</h2></div><button data-action="undo" class="secondary">↶ Undo last ball</button></div><div class="run-buttons"><button data-outcome="0"><b>0</b><small>DOT</small></button><button data-outcome="1"><b>1</b><small>RUN</small></button><button data-outcome="2"><b>2</b><small>RUNS</small></button><button data-outcome="3"><b>3</b><small>RUNS</small></button><button data-outcome="4"><b>4</b><small>FOUR</small></button><button data-outcome="6"><b>6</b><small>SIX</small></button><button class="wicket" data-outcome="W"><b>W</b><small>WICKET</small></button><button class="extra" data-outcome="Wd"><b>Wd</b><small>WIDE +1</small></button><button class="extra" data-outcome="Nb"><b>Nb</b><small>NO BALL +1</small></button></div><p class="hint">Wides and no-balls add one extra and do not count as legal balls. A wicket is recorded as caught.</p></section>
-<section class="panel broadcast"><div><div class="eyebrow">BROADCAST OUTPUT</div><b>OBS Browser Source</b><p>1920 × 1080 • http://127.0.0.1:8000/overlay</p></div><a href="/docs">API reference ↗</a></section><p id="error" role="alert"></p></main><script src="/static/live.js"></script></body></html>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>CricketOBS Studio</title>
+    <link rel="stylesheet" href="/static/studio.css">
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="topbar">
+        <div class="brand">CRICKET<span>OBS</span></div>
+        <nav class="nav">
+          <a class="active" href="/">Home</a>
+          <a href="/match-info">Match info</a>
+          <a href="/roster">Roster</a>
+          <a href="/playing-xi">Playing XI</a>
+          <a href="/toss">Toss</a>
+          <a href="/overlay" target="_blank">Overlay</a>
+        </nav>
+      </header>
+
+      <section class="hero">
+        <div class="hero-card">
+          <div class="eyebrow">Broadcast control</div>
+          <h1>Match start timer & live studio management</h1>
+          <p>Dial in the first frame for the stream, add match details, and push the correct broadcast scene without leaving the control room.</p>
+          <div style="display:flex; gap:12px; flex-wrap:wrap; margin-top:20px;">
+            <button class="primary-btn" data-action="start">Start timer</button>
+            <button class="secondary-btn" data-action="pause">Pause</button>
+            <button class="ghost-btn" data-action="reset">Reset match</button>
+          </div>
+        </div>
+
+        <div class="hero-card timer-box">
+          <div class="eyebrow">Stream countdown</div>
+          <div id="countdown" class="clock">01:30</div>
+          <div class="muted">Background ready for OBS</div>
+        </div>
+      </section>
+
+      <section class="grid">
+        <div class="panel">
+          <div class="eyebrow">Background</div>
+          <h2>Scene setup</h2>
+          <div class="field-group">
+            <label class="field">
+              <span>Stream title</span>
+              <input id="stream-title" value="CricketOBS Broadcast" />
+            </label>
+            <label class="field">
+              <span>Match start timer (seconds)</span>
+              <input id="timer-seconds" type="number" min="0" max="600" value="90" />
+            </label>
+            <label class="field">
+              <span>Background style</span>
+              <select id="background-style">
+                <option value="linear-gradient(135deg, #08141f, #173449)">Dark stadium</option>
+                <option value="linear-gradient(135deg, #162a1d, #173449)">Green pitch</option>
+                <option value="linear-gradient(135deg, #2c1d23, #1a354c)">Night lights</option>
+              </select>
+            </label>
+            <button class="primary-btn" data-broadcast-set>Apply background</button>
+          </div>
+        </div>
+
+        <div class="panel">
+          <div class="eyebrow">Current status</div>
+          <h2>Broadcast state</h2>
+          <div class="score-list">
+            <div class="score-pill"><span>Sequence</span><strong id="sequence">0</strong></div>
+            <div class="score-pill"><span>Running</span><strong id="status">Paused</strong></div>
+            <div class="score-pill"><span>Live match</span><strong id="match-label">Valley Falcons vs Summit Strikers</strong></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="grid">
+        <div class="panel">
+          <div class="eyebrow">Match details</div>
+          <h2>Teams</h2>
+          <div class="team-row">
+            <div>
+              <label class="field">
+                <span>Full name</span>
+                <input id="team-a-name" value="Valley Falcons" />
+              </label>
+              <label class="field">
+                <span>Short name</span>
+                <input id="team-a-short" value="VF" maxlength="6" />
+              </label>
+              <div class="logo-box">VF</div>
+            </div>
+            <div>
+              <label class="field">
+                <span>Full name</span>
+                <input id="team-b-name" value="Summit Strikers" />
+              </label>
+              <label class="field">
+                <span>Short name</span>
+                <input id="team-b-short" value="SS" maxlength="6" />
+              </label>
+              <div class="logo-box">SS</div>
+            </div>
+          </div>
+          <div style="margin-top:14px; display:flex; gap:10px;">
+            <button class="primary-btn" data-broadcast-set>Update match info</button>
+          </div>
+        </div>
+
+        <div class="panel">
+          <div class="eyebrow">Quick links</div>
+          <h2>Match flow</h2>
+          <div class="list-stack">
+            <div class="item"><span>1. Stream countdown</span><span class="status-dot"></span></div>
+            <div class="item"><span>2. Match info</span><span class="status-dot"></span></div>
+            <div class="item"><span>3. Team rosters</span><span class="status-dot"></span></div>
+            <div class="item"><span>4. Playing XI</span><span class="status-dot"></span></div>
+            <div class="item"><span>5. Toss decision</span><span class="status-dot"></span></div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <script src="/static/live.js"></script>
+  </body>
+</html>
+

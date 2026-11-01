@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>CricketOBS • Toss</title>
+    <link rel="stylesheet" href="/static/studio.css">
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="topbar">
+        <div class="brand">CRICKET<span>OBS</span></div>
+        <nav class="nav">
+          <a href="/">Home</a>
+          <a href="/match-info">Match info</a>
+          <a href="/roster">Roster</a>
+          <a href="/playing-xi">Playing XI</a>
+          <a class="active" href="/toss">Toss</a>
+          <a href="/overlay" target="_blank">Overlay</a>
+        </nav>
+      </header>
+
+      <section class="hero">
+        <div class="hero-card">
+          <div class="eyebrow">Toss</div>
+          <h1>Heads or tails</h1>
+          <p>Present a traditional Nepali coin toss with a clear winner and chosen side before the live match starts.</p>
+        </div>
+
+        <div class="hero-card timer-box">
+          <div class="coin" aria-label="coin"></div>
+          <div class="score-pill" style="width:100%; max-width:260px; margin-top:8px;"><span>Result</span><strong id="toss-result">Heads</strong></div>
+        </div>
+      </section>
+
+      <section class="grid">
+        <div class="panel">
+          <div class="eyebrow">Call</div>
+          <h2>Choose the toss outcome</h2>
+          <div style="display:flex; gap:12px; flex-wrap:wrap; margin-top:14px;">
+            <button class="primary-btn" onclick="setResult('Heads')">Heads</button>
+            <button class="secondary-btn" onclick="setResult('Tails')">Tails</button>
+            <button class="ghost-btn" onclick="setWinner('Valley Falcons')">Winner: Valley Falcons</button>
+            <button class="ghost-btn" onclick="setWinner('Summit Strikers')">Winner: Summit Strikers</button>
+          </div>
+        </div>
+
+        <div class="panel">
+          <div class="eyebrow">Winner</div>
+          <h2>Decision</h2>
+          <div class="score-list">
+            <div class="score-pill"><span>Side</span><strong id="toss-side">Heads</strong></div>
+            <div class="score-pill"><span>Winner</span><strong id="toss-winner">Valley Falcons</strong></div>
+            <div class="score-pill"><span>Decision</span><strong>Bat / Bowl</strong></div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <script>
+      function setResult(result) {
+        document.getElementById('toss-result').textContent = result;
+        document.getElementById('toss-side').textContent = result;
+      }
+      function setWinner(winner) {
+        document.getElementById('toss-winner').textContent = winner;
+      }
+    </script>
+  </body>
+</html>

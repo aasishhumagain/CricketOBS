@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>CricketOBS • Roster</title>
+    <link rel="stylesheet" href="/static/studio.css">
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="topbar">
+        <div class="brand">CRICKET<span>OBS</span></div>
+        <nav class="nav">
+          <a href="/">Home</a>
+          <a href="/match-info">Match info</a>
+          <a class="active" href="/roster">Roster</a>
+          <a href="/playing-xi">Playing XI</a>
+          <a href="/toss">Toss</a>
+          <a href="/overlay" target="_blank">Overlay</a>
+        </nav>
+      </header>
+
+      <section class="hero">
+        <div class="hero-card">
+          <div class="eyebrow">Roster management</div>
+          <h1>Add the full team squad</h1>
+          <p>Keep each squad separate with player names, roles, and a clean match-day list before the playing XI is finalized.</p>
+        </div>
+
+        <div class="hero-card">
+          <div class="eyebrow">Add player</div>
+          <div class="field-group">
+            <label class="field">
+              <span>Player name</span>
+              <input id="player-name" placeholder="Enter player name" />
+            </label>
+            <label class="field">
+              <span>Team</span>
+              <select id="player-team">
+                <option>Valley Falcons</option>
+                <option>Summit Strikers</option>
+              </select>
+            </label>
+            <button class="primary-btn" onclick="addPlayer()">Add to roster</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="grid">
+        <div class="panel">
+          <div class="eyebrow">Valley Falcons</div>
+          <h2>Squad</h2>
+          <div id="roster-team-a" class="list-stack">
+            <div class="item"><span>Aarav Shrestha</span><span>#1</span></div>
+            <div class="item"><span>Anish Gurung</span><span>#7</span></div>
+            <div class="item"><span>Bibek Pandey</span><span>#14</span></div>
+            <div class="item"><span>Nabin Tamang</span><span>#31</span></div>
+            <div class="item"><span>Rabin Karki</span><span>#55</span></div>
+          </div>
+        </div>
+
+        <div class="panel">
+          <div class="eyebrow">Summit Strikers</div>
+          <h2>Squad</h2>
+          <div id="roster-team-b" class="list-stack">
+            <div class="item"><span>Sanjay KC</span><span>#8</span></div>
+            <div class="item"><span>Prabin Rai</span><span>#9</span></div>
+            <div class="item"><span>Hari Thapa</span><span>#12</span></div>
+            <div class="item"><span>Rohit Shah</span><span>#21</span></div>
+            <div class="item"><span>Kushal Magar</span><span>#44</span></div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <script>
+      function addPlayer() {
+        const name = document.getElementById('player-name').value.trim();
+        const team = document.getElementById('player-team').value;
+        if (!name) return;
+        const list = document.getElementById(team === 'Valley Falcons' ? 'roster-team-a' : 'roster-team-b');
+        const item = document.createElement('div');
+        item.className = 'item';
+        item.innerHTML = '<span>' + name + '</span><span>new</span>';
+        list.appendChild(item);
+        document.getElementById('player-name').value = '';
+      }
+    </script>
+  </body>
+</html>
