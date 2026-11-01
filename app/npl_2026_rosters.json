@@ -1,0 +1,1360 @@
+{
+  "season": 2026,
+  "source": "https://nplt20league.com/teams/",
+  "source_published": "2026-11-01",
+  "source_note": "NPLT20League.com is an independent NPL coverage site, not affiliated with official NPL.",
+  "teams": [
+    {
+      "slug": "biratnagar-kings",
+      "name": "Biratnagar Kings",
+      "short_name": "BK",
+      "logo_url": "https://nplt20league.com/uploads/biratnagar-kings-munr64ub-ac787c36-585f-4e54-9c0b-a9da0e0597c3.png",
+      "players": [
+        {
+          "name": "Andre Russell",
+          "role": "All-rounder",
+          "category": "Overseas",
+          "captain": false,
+          "photo_url": "https://nplt20league.com/uploads/biratnagar-kings-mver6d0f-f3737209-cc9f-403f-ae19-1b99317a6b27.webp",
+          "profile_url": "https://nplt20league.com/player/andre-russell/profile/"
+        },
+        {
+          "name": "angelo mathews",
+          "role": "All-rounder",
+          "category": "Overseas",
+          "captain": false,
+          "photo_url": "https://nplt20league.com/uploads/angelo-mathews-mvmlx4k0-dba131d5-5fe3-4880-8dae-238c46167c31.webp",
+          "profile_url": "https://nplt20league.com/player/angelo-mathews/profile/"
+        },
+        {
+          "name": "Ayush Neupane",
+          "role": "All-rounder",
+          "category": "Overseas",
+          "captain": false,
+          "photo_url": "https://nplt20league.com/uploads/ayush-neupane-2-mvmmpv0q-61975323-087e-4316-ac61-f1de49f7a6b8.webp",
+          "profile_url": "https://nplt20league.com/player/ayush-neupane/profile/"
+        },
+        {
+          "name": "Charith Asalanka",
+          "role": "All-rounder",
+          "category": "Overseas",
+          "captain": false,
+          "photo_url": "https://nplt20league.com/uploads/charith-asalanka-mv99ntj3-edadfb25-510e-4e39-a3cf-5a8283537673.png",
+          "profile_url": "https://nplt20league.com/player/charith-asalanka/profile/"
+        },
+        {
+          "name": "Sandeep Lamichhane",
+          "role": "Bowler",
+          "category": "Domestic",
+          "captain": true,
+          "photo_url": "https://nplt20league.com/uploads/sandeep-lamichhane-mv9jyczi-802d37f4-1d32-432b-800e-dc5653b78824.webp",
+          "profile_url": "https://nplt20league.com/player/sandeep-lamichhane/profile/"
+        },
+        {
+          "name": "Shehan Jayasuriya",
+          "role": "All-rounder",
+          "category": "Overseas",
+          "captain": false,
+          "photo_url": "https://nplt20league.com/uploads/biratnagar-kings-cricketer-mvq6yysc-62baf57a-a186-45a0-b6c9-31c65a31cdbd.webp",
+          "profile_url": "https://nplt20league.com/player/shehan-jayasuriya/profile/"
+        },
+        {
+          "name": "Shubham Ranjane",
+          "role": "All-rounder",
+          "category": "Overseas",
+          "captain": false,
+          "photo_url": "https://nplt20league.com/uploads/shubham-ranjane-mv99dovq-ff8a2986-e053-4f94-90ac-9dcea228681f.png",
+          "profile_url": "https://nplt20league.com/player/shubham-ranjane/profile/"
+        },
+        {
+          "name": "Lokesh Bam",
+          "role": "Wicketkeeper",
+          "category": "Domestic",
+          "captain": false,
+          "photo_url": "https://nplt20league.com/uploads/lokesh-bam-mv9ju61a-fcf05d20-1608-43da-ba62-b1ea806254b1.webp",
+          "profile_url": "https://nplt20league.com/player/lokesh-bam/profile/"
+        },
+        {
+          "name": "Basir Ahamad",
+          "role": "All-rounder",
+          "category": "Domestic",
+          "captain": false,
+          "photo_url": "https://nplt20league.com/uploads/basir-ahamad-1-mv9jvo94-6f904963-7f4a-4f5e-a04b-2ee8b67057b0.webp",
+          "profile_url": "https://nplt20league.com/player/basir-ahamad/profile/"
+        },
+        {
+          "name": "Narayan Joshi",
+          "role": "All-rounder",
+          "category": "Domestic",
+          "captain": false,
+          "photo_url": "https://nplt20league.com/uploads/narayan-joshi-1-mv9jte5m-8a089f00-10ce-4878-bc82-7c6470fd58cb.webp",
+          "profile_url": "https://nplt20league.com/player/narayan-joshi/profile/"
+        },
+        {
+          "name": "Pratish GC",
+          "role": "All-rounder",
+          "category": "Domestic",
+          "captain": false,
+          "photo_url": "https://nplt20league.com/uploads/pratish-gc-mv9jx2rf-83c79176-0be5-4267-b3e6-51c8184dc071.webp",
+          "profile_url": "https://nplt20league.com/player/pratish-gc/profile/"
+        },
+        {
+          "name": "Subash Bhandari",
+          "role": "Bowler",
+          "category": "Domestic",
+          "captain": false,
+          "photo_url": "https://nplt20league.com/uploads/subash-bhandari-mv9jrqm0-031be7e8-5090-430c-b22d-dcef38efe3a2.webp",
+          "profile_url": "https://nplt20league.com/player/subash-bhandari/profile/"
+        },
+        {
+          "name": "Rupesh Kumar Singh",
+          "role": "All-rounder",
+          "category": "Domestic",
+          "captain": false,
+          "photo_url": "https://nplt20league.com/uploads/rupesh-kumar-singh-mv99lzeg-879a4e9a-4019-40d4-975e-6071e89fb142.png",
+          "profile_url": "https://nplt20league.com/player/rupesh-kumar-singh/profile/"
+        },
+        {
+          "name": "Naren Saud",
+          "role": "All-rounder",
+          "category": "Domestic",
+          "captain": false,
+          "photo_url": "https://nplt20league.com/uploads/naren-saud-mv99jufw-178805ea-7661-4bfa-b2c3-6fd4e2a98ae1.png",
+          "profile_url": "https://nplt20league.com/player/naren-saud/profile/"
+        },
+        {
+          "name": "Dilsad Ali",
+          "role": "Batter",
+          "category": "Domestic",
+          "captain": false,
+          "photo_url": "https://nplt20league.com/uploads/dilsad-ali-mv9jix0k-472af244-d580-476d-b2c1-1b110b7508c8.webp",
+          "profile_url": "https://nplt20league.com/player/dilsad-ali/profile/"
+        },
+        {
+          "name": "Sujan Thapaliya",
+          "role": "Batter",
+          "category": "Domestic",
+          "captain": false,
+          "photo_url": "https://nplt20league.com/uploads/sujan-thapaliya-mv9jq545-36d48915-a9b7-4998-af89-f6c63f7a5455.webp",
+          "profile_url": "https://nplt20league.com/player/sujan-thapaliya/profile/"
+        },
+        {
+          "name": "Aprajit Poudel",
+          "role": "Bowler",
+          "category": "Domestic",
+          "captain": false,
+          "photo_url": "https://nplt20league.com/uploads/aprajit-poudel-mv9jwaem-bca5a10e-e71f-4393-b4fa-c8fee796e928.webp",
+          "profile_url": "https://nplt20league.com/player/aparajit-poudel/profile/"
+        },
+        {
+          "name": "Pratik Shrestha",
+          "role": "All-rounder",
+          "category": "Domestic",
+          "captain": false,
+          "photo_url": "https://nplt20league.com/uploads/pratik-shrestha-mv99hs09-7d835477-62b2-4283-90bf-cb2cbb7f96d5.png",
+          "profile_url": "https://nplt20league.com/player/pratik-shrestha/profile/"
+        },
+        {
+          "name": "Imran Sheikh",
+          "role": "All-rounder",
+          "category": "Domestic",
+          "captain": false,
+          "photo_url": "https://nplt20league.com/uploads/imran-sheikh-mv99gjdv-8a137ec4-0563-43ea-9e2e-34205c87ee26.png",
+          "profile_url": "https://nplt20league.com/player/imran-sheikh/profile/"
+        }
+      ]
+    },
+    {
+      "slug": "chitwan-rhinos",
+      "name": "Chitwan Rhinos",
+      "short_name": "CR",
+      "logo_url": "https://nplt20league.com/uploads/chitwan-rhinos-munr6l8s-6ececc07-d90c-41da-9143-8abb8421c5c1.png",
+      "players": [
+        {
+          "name": "Daniel Richard Mousley",
+          "role": "All-rounder",
+          "category": "Overseas",
+          "captain": false,
+          "photo_url": "https://nplt20league.com/uploads/npl-2026-mvqhn2po-0ff18417-e0ea-4bc2-b2ca-c5c98029ea1c.png",
+          "profile_url": "https://nplt20league.com/player/daniel-richard-mousley/profile/"
+        },
+        {
+          "name": "Dawid Malan",
+          "role": "Batter",
+          "category": "Overseas",
+          "captain": false,
+          "photo_url": "https://nplt20league.com/uploads/chitwan-rhinos-athlete-portrait-mvq7lxgj-393ce946-9821-48c1-8dd4-8ffb67b176a1.webp",
+          "profile_url": "https://nplt20league.com/player/dawid-malan/profile/"
+        },
+        {
+          "name": "Hasan Ali",
+          "role": "Bowler",
+          "category": "Overseas",
+          "captain": false,
+          "photo_url": "https://nplt20league.com/uploads/hasan-ali-mvnwcm8b-760381a5-79a0-4e6a-b59d-05b61859490c.webp",
+          "profile_url": "https://nplt20league.com/player/hasan-ali/profile/"
+        },
+        {
+          "name": "Kalim Sana",
+          "role": "Bowler",
+          "category": "Overseas",
+          "captain": false,
+          "photo_url": "https://nplt20league.com/uploads/kaleem-sana-s3-mutwrepr-cb57d8dc-a8ae-4699-aa87-2b7de0d7cfab.webp",
+          "profile_url": "https://nplt20league.com/player/kalim-sana/profile/"
+        },
+        {
+          "name": "Kamil mishara",
+          "role": "Batter",
+          "category": "Overseas",
+          "captain": false,
+          "photo_url": "https://nplt20league.com/uploads/kamil-mishara-mvmoei2p-683ebeee-ce6b-479d-a283-d661416dfdc3.webp",
+          "profile_url": "https://nplt20league.com/player/kamil-mishara/profile/"
+        },
+        {
+          "name": "Kushal Malla",
+          "role": "Batter",
+          "category": "Domestic",
+          "captain": true,
+          "photo_url": "https://nplt20league.com/uploads/kushal-malla-s3-mutwul43-1ed38d4a-7fc9-4ad6-ba3c-b38e52b040cf.webp",
+          "profile_url": "https://nplt20league.com/player/kushal-malla/profile/"
+        },
+        {
+          "name": "Muhammad Nawaz",
+          "role": "All-rounder",
+          "category": "Overseas",
+          "captain": false,
+          "photo_url": "https://nplt20league.com/uploads/muhammad-nawaz-mvny0bfd-0327e17a-7bad-420d-836d-4ac6f45ddcf9.webp",
+          "profile_url": "https://nplt20league.com/player/muhammad-nawaz/profile/"
+        },
+        {
+          "name": "Ravi Bopara",
+          "role": "All-rounder",
+          "category": "Overseas",
+          "captain": false,
+          "photo_url": "https://nplt20league.com/uploads/ravi-bopara-mv6z2lxu-4f5fa011-3aba-4e32-b457-b4885a0c63ed.webp",
+          "profile_url": "https://nplt20league.com/player/ravi-bopara/profile/"
+        },
+        {
+          "name": "Sikandar Raza",
+          "role": "All-rounder",
+          "category": "Overseas",
+          "captain": false,
+          "photo_url": "https://nplt20league.com/uploads/sikandar-raza-mv70b9ft-539858f3-8c4c-4164-b4d9-287487e4a12a.webp",
+          "profile_url": "https://nplt20league.com/player/sikandar-raza/profile/"
+        },
+        {
+          "name": "Tom Taylor",
+          "role": "Bowler",
+          "category": "Overseas",
+          "captain": false,
+          "photo_url": "https://nplt20league.com/uploads/chiwan-2026-mvqi7lt8-e94e8434-ad23-43bc-8128-58f6a2688469.webp",
+          "profile_url": "https://nplt20league.com/player/tom-taylor/profile/"
+        },
+        {
+          "name": "Usama Mir",
+          "role": "Bowler",
+          "category": "Overseas",
+          "captain": false,
+          "photo_url": "https://nplt20league.com/uploads/chitwan-rhinos-jersey-portrait-cutout-mv9nmkvn-4de1efc7-eec9-4e83-ab49-6b9c66a81edc.webp",
+          "profile_url": "https://nplt20league.com/player/usama-mir/profile/"
+        },
+        {
+          "name": "Rijan Dhakal",
+          "role": "Bowler",
+          "category": "Domestic",
+          "captain": false,
+          "photo_url": "https://nplt20league.com/uploads/rijan-dhakal-mv8dzv6q-177e0699-f68f-4519-b5f1-4d3f2bbcb1e2.webp",
+          "profile_url": "https://nplt20league.com/player/rijan-dhakal/profile/"
+        },
+        {
+          "name": "Deepak Bohara",
+          "role": "Batter",
+          "category": "Domestic",
+          "captain": false,
+          "photo_url": "https://nplt20league.com/uploads/deepak-bohara-s3-mutwyw1n-fe718018-d117-4fdf-81a7-a464e7ab3c6c.webp",
+          "profile_url": "https://nplt20league.com/player/deepak-bohara/profile/"
+        },
+        {
+          "name": "Ranjeet Kumar",
+          "role": "Bowler",
+          "category": "Domestic",
+          "captain": false,
+          "photo_url": "https://nplt20league.com/uploads/ranjeet-kumar-mv8dxujp-32d70ccb-e209-4ca9-9818-922cea86e40a.webp",
+          "profile_url": "https://nplt20league.com/player/ranjeet-kumar/profile/"
+        },
+        {
+          "name": "Kamal Singh Airee",
+          "role": "Bowler",
+          "category": "Domestic",
+          "captain": false,
+          "photo_url": "https://nplt20league.com/uploads/kamal-singh-airee-mv8dwz1y-0b595bea-b080-4ee0-8371-fb783e57fbe7.webp",
+          "profile_url": "https://nplt20league.com/player/kamal-singh-airee/profile/"
+        },
+        {
+          "name": "Dev Khanal",
+          "role": "Batter",
+          "category": "Domestic",
+          "captain": false,
+          "photo_url": "https://nplt20league.com/uploads/dev-khanal-mv8f793f-98cb79f9-49fa-4d4b-bf0d-8e309e3e53a5.png",
+          "profile_url": "https://nplt20league.com/player/dev-khanal/profile/"
+        },
+        {
+          "name": "Arjun Saud",
+          "role": "Wicketkeeper",
+          "category": "Domestic",
+          "captain": false,
+          "photo_url": "https://nplt20league.com/uploads/arjun-saud-mv8f2dew-53e3e608-7c42-4262-9808-b6d83ebf6e79.webp",
+          "profile_url": "https://nplt20league.com/player/arjun-saud/profile/"
+        },
+        {
+          "name": "Bibek Kumar Yadav",
+          "role": "All-rounder",
+          "category": "Domestic",
+          "captain": false,
+          "photo_url": "https://nplt20league.com/uploads/bibek-kumar-yadav-s3-mv8fa28c-a0f5fbe1-87f1-48c1-8a76-ca449e2a384f.webp",
+          "profile_url": "https://nplt20league.com/player/bibek-kumar-yadav/profile/"
+        },
+        {
+          "name": "Mousom Dhakal",
+          "role": "Bowler",
+          "category": "Domestic",
+          "captain": false,
+          "photo_url": "https://nplt20league.com/uploads/mousam-dhakal-s3-mv8fbemi-46e07eb1-ee77-443e-a811-2550cbef4044.webp",
+          "profile_url": "https://nplt20league.com/player/mousom-dhakal/profile/"
+        },
+        {
+          "name": "Ashok Dhami",
+          "role": "Bowler",
+          "category": "Domestic",
+          "captain": false,
+          "photo_url": "https://nplt20league.com/uploads/ashok-dhami-s3-mv8fdcia-89b85e41-7eb0-4d2f-9662-46a588e7bae1.webp",
+          "profile_url": "https://nplt20league.com/player/ashok-dhami/profile/"
+        },
+        {
+          "name": "Bipin Rawal",
+          "role": "Batter",
+          "category": "Domestic",
+          "captain": false,
+          "photo_url": "https://nplt20league.com/uploads/bipin-rawal-s3-mutx0rtk-670f3c9e-3bb1-4fe0-b7ec-596cdded3a8b.webp",
+          "profile_url": "https://nplt20league.com/player/bipin-rawal/profile/"
+        },
+        {
+          "name": "Gautam KC",
+          "role": "Bowler",
+          "category": "Domestic",
+          "captain": false,
+          "photo_url": "https://nplt20league.com/uploads/gautam-kc-s3-mutx52op-206fde3d-de67-4cc1-ba04-a399522a87bf.webp",
+          "profile_url": "https://nplt20league.com/player/gautam-kc/profile/"
+        },
+        {
+          "name": "Salahuddin Khan",
+          "role": "All-rounder",
+          "category": "Domestic",
+          "captain": false,
+          "photo_url": "https://nplt20league.com/uploads/salahuddin-khan-s3-mutwhswh-04d87497-8a8a-4253-a75c-22cccc005448.webp",
+          "profile_url": "https://nplt20league.com/player/salahuddin-khan/profile/"
+        }
+      ]
+    },
+    {
+      "slug": "janakpur-bolts",
+      "name": "Janakpur Bolts",
+      "short_name": "JB",
+      "logo_url": "https://nplt20league.com/uploads/janakpur-bolts-1-munr6zzs-f4d250ae-79c3-4eb2-8ce9-d70c2fd7d199.png",
+      "players": [
+        {
+          "name": "Anil Sah",
+          "role": "Wicketkeeper",
+          "category": "Domestic",
+          "captain": true,
+          "photo_url": "https://nplt20league.com/uploads/anil-sah-mv8by5pp-cac4af2f-7fba-42a5-a58d-3b63c16818ca.png",
+          "profile_url": "https://nplt20league.com/player/anil-sah/profile/"
+        },
+        {
+          "name": "Harmeet Singh",
+          "role": "All-rounder",
+          "category": "Overseas",
+          "captain": true,
+          "photo_url": "https://nplt20league.com/uploads/harmeet-singh-mv88wx5y-c9ee85a1-2f44-4993-984c-10a0fab20ea6.webp",
+          "profile_url": "https://nplt20league.com/player/harmeet-singh/profile/"
+        },
+        {
+          "name": "James Neesham",
+          "role": "All-rounder",
+          "category": "Overseas",
+          "captain": false,
+          "photo_url": "https://nplt20league.com/uploads/jimmy-neesham-mv88ve5t-310e04d9-c1f7-4e79-9d8a-c23658d3ce17.webp",
+          "profile_url": "https://nplt20league.com/player/james-neesham/profile/"
+        },
+        {
+          "name": "Kusal Perera",
+          "role": "Batter",
+          "category": "Overseas",
+          "captain": false,
+          "photo_url": "https://nplt20league.com/uploads/kusal-perera-mvp125c4-abeac6b8-69bf-43b1-8930-43bcce4d5fee.webp",
+          "profile_url": "https://nplt20league.com/player/kusal-perera/profile/"
+        },
+        {
+          "name": "Moeen Ali",
+          "role": "All-rounder",
+          "category": "Overseas",
+          "captain": false,
+          "photo_url": "https://nplt20league.com/uploads/moeen-ali-mv88piki-ceab7c9d-079a-4104-8294-f9d58b244b1f.webp",
+          "profile_url": "https://nplt20league.com/player/moeen-ali/profile/"
+        },
+        {
+          "name": "Parvez Hossain Emon",
+          "role": "Batter",
+          "category": "Overseas",
+          "captain": false,
+          "photo_url": "https://nplt20league.com/uploads/parvez-hossain-emon-mvt2np5y-5cb527c1-41fc-4392-a2cd-286ace178a65.webp",
+          "profile_url": "https://nplt20league.com/player/parvez-hossain-emon/profile/"
+        },
+        {
+          "name": "Rahul Yadav",
+          "role": "Bowler",
+          "category": "Overseas",
+          "captain": false,
+          "photo_url": "https://nplt20league.com/uploads/janakpur-bolts-cricketer-portrait-mvqqqr3e-ca268ff0-6758-487d-96e5-d2ccf06750f7.webp",
+          "profile_url": "https://nplt20league.com/player/rahul-yadav/profile/"
+        },
+        {
+          "name": "Saif Hassan",
+          "role": "Batter",
+          "category": "Overseas",
+          "captain": false,
+          "photo_url": "https://nplt20league.com/uploads/saif-hassan-1-mvt2ohcb-27591d6c-6f2c-4754-a221-2b457329f863.webp",
+          "profile_url": "https://nplt20league.com/player/saif-hassan/profile/"
+        },
+        {
+          "name": "Lalit Rajbanshi",
+          "role": "Bowler",
+          "category": "Domestic",
+          "captain": false,
+          "photo_url": "https://nplt20league.com/uploads/lalit-rajbanshi-mv8cp36u-99db08f7-0b19-42dd-ae80-0f9af34ad482.webp",
+          "profile_url": "https://nplt20league.com/player/lalit-rajbanshi/profile/"
+        },
+        {
+          "name": "Bikash Aagri",
+          "role": "Batter",
+          "category": "Domestic",
+          "captain": false,
+          "photo_url": "https://nplt20league.com/uploads/bikash-aagri-mv8c01hk-ce80ea23-0d0b-4f33-9ef6-7a777697dad3.png",
+          "profile_url": "https://nplt20league.com/player/bikash-aagri/profile/"
+        },
+        {
+          "name": "Mayan Yadav",
+          "role": "All-rounder",
+          "category": "Domestic",
+          "captain": false,
+          "photo_url": "https://nplt20league.com/uploads/mayan-yadav-mv8d0hzu-bfd22762-47dd-4ac6-98da-25f621c8d0e4.webp",
+          "profile_url": "https://nplt20league.com/player/mayan-yadav/profile/"
+        },
+        {
+          "name": "Aaditya Mahata",
+          "role": "Batter",
+          "category": "Domestic",
+          "captain": false,
+          "photo_url": "https://nplt20league.com/uploads/aaditya-mahata-mv8buzpu-d56c085b-44fe-4802-b94f-a24af24c6d0e.png",
+          "profile_url": "https://nplt20league.com/player/aaditya-mahata/profile/"
+        },
+        {
+          "name": "Trit Raj Das",
+          "role": "All-rounder",
+          "category": "Domestic",
+          "captain": false,
+          "photo_url": "https://nplt20league.com/uploads/trit-raj-das-mv8c8z4o-b0d0e578-9ed9-4367-8799-2d009172ac5b.png",
+          "profile_url": "https://nplt20league.com/player/trit-raj-das/profile/"
+        },
+        {
+          "name": "Abhishek Tiwari",
+          "role": "All-rounder",
+          "category": "Domestic",
+          "captain": false,
+          "photo_url": "https://nplt20league.com/uploads/abhishek-tiwari-mv8cskai-b4500691-ebbd-493f-a0d9-5f0852557d53.webp",
+          "profile_url": "https://nplt20league.com/player/abhishek-tiwari/profile/"
+        },
+        {
+          "name": "Bishal Patel",
+          "role": "Batter",
+          "category": "Domestic",
+          "captain": false,
+          "photo_url": "https://nplt20league.com/uploads/bishal-patel-mv8c23nn-79e75bec-34d7-4d37-a919-78712df2081c.png",
+          "profile_url": "https://nplt20league.com/player/bishal-patel/profile/"
+        },
+        {
+          "name": "Amar Singh Rautela",
+          "role": "All-rounder",
+          "category": "Domestic",
+          "captain": false,
+          "photo_url": "https://nplt20league.com/uploads/amar-singh-rautela-mv8cvpfx-82c757f6-de0f-48e7-87a9-d6d2a8fa449f.webp",
+          "profile_url": "https://nplt20league.com/player/amar-singh-rautela/profile/"
+        },
+        {
+          "name": "Rit Gautam",
+          "role": "Batter",
+          "category": "Domestic",
+          "captain": false,
+          "photo_url": "https://nplt20league.com/uploads/rit-gautam-mv8c4hij-554fe43c-c4a6-472c-94fe-d89702fef995.png",
+          "profile_url": "https://nplt20league.com/player/rit-gautam/profile/"
+        },
+        {
+          "name": "Santosh Karki",
+          "role": "Batter",
+          "category": "Domestic",
+          "captain": false,
+          "photo_url": "https://nplt20league.com/uploads/santosh-karki-mv8c6ipc-850bdc58-bcaf-4da9-807a-8fbec1c5718f.png",
+          "profile_url": "https://nplt20league.com/player/santosh-karki/profile/"
+        },
+        {
+          "name": "Ashutosh Pandey",
+          "role": "Bowler",
+          "category": "Domestic",
+          "captain": false,
+          "photo_url": "https://nplt20league.com/uploads/ashutosh-pandey-mv88riki-a32300dc-de45-47b2-b16d-a77207fd1618.webp",
+          "profile_url": "https://nplt20league.com/player/ashutosh-pandey/profile/"
+        },
+        {
+          "name": "Bishal Shusling",
+          "role": "Bowler",
+          "category": "Domestic",
+          "captain": false,
+          "photo_url": "https://nplt20league.com/uploads/bishal-susling-mv8cqr3v-8e6c12e0-38f0-4e24-b032-d806f6a58974.webp",
+          "profile_url": "https://nplt20league.com/player/bishal-shusling/profile/"
+        }
+      ]
+    },
+    {
+      "slug": "karnali-yaks",
+      "name": "Karnali Yaks",
+      "short_name": "KY",
+      "logo_url": "https://nplt20league.com/uploads/392046-hxffthzoq2lnhjelnwui7qltqtocvg-eace7066-64d40c48-20e7-4c22-a939-8c369a16e1c8.png",
+      "players": [
+        {
+          "name": "Akbar ali",
+          "role": "Wicketkeeper",
+          "category": "Overseas",
+          "captain": false,
+          "photo_url": "https://nplt20league.com/uploads/akbar-ali-1-mvmn9ap2-da9a023f-9eca-4bf7-a01c-23595d3785b5.webp",
+          "profile_url": "https://nplt20league.com/player/akbar-ali/profile/"
+        },
+        {
+          "name": "Ariful Islam",
+          "role": "Batter",
+          "category": "Overseas",
+          "captain": false,
+          "photo_url": "https://nplt20league.com/uploads/ariful-islam-mv6bslmm-2628c341-d669-4242-a3f4-a0d056e7c439.webp",
+          "profile_url": "https://nplt20league.com/player/ariful-islam/profile/"
+        },
+        {
+          "name": "David Miller",
+          "role": "Batter",
+          "category": "Overseas",
+          "captain": false,
+          "photo_url": "https://nplt20league.com/uploads/david-miller-2026-mvlfo15a-fc8047f3-bd50-4077-98dd-755293726c66.webp",
+          "profile_url": "https://nplt20league.com/player/david-miller/profile/"
+        },
+        {
+          "name": "Diwan Pun",
+          "role": "All-rounder",
+          "category": "Overseas",
+          "captain": false,
+          "photo_url": "https://nplt20league.com/uploads/diwan-pun-mvmfiibr-c1ce469a-a3a0-4be0-9aad-7a5016468a60.webp",
+          "profile_url": "https://nplt20league.com/player/diwan-pun/profile/"
+        },
+        {
+          "name": "Hikmat Bahadur Shahi",
+          "role": "Batter",
+          "category": "Overseas",
+          "captain": false,
+          "photo_url": "https://nplt20league.com/uploads/hikmat-bahadur-shahi-mvmnuyjw-c97616aa-8db0-4d89-9eda-f90d64e155d0.webp",
+          "profile_url": "https://nplt20league.com/player/hikmat-bahadur-shahi/profile/"
+        },
+        {
+          "name": "Hussain Talat",
+          "role": "All-rounder",
+          "category": "Overseas",
+          "captain": false,
+          "photo_url": "https://nplt20league.com/uploads/hussain-talat-karnali-yaks-mvj3ljy4-aabbe93a-b784-483f-9027-8c056c7dd835.webp",
+          "profile_url": "https://nplt20league.com/player/hussain-talat/profile/"
+        },
+        {
+          "name": "Mark Watt",
+          "role": "All-rounder",
+          "category": "Overseas",
+          "captain": false,
+          "photo_url": "https://nplt20league.com/uploads/mark-watt-mv3qhyo0-2d315fcd-6561-4611-88fa-46a040e79026.png",
+          "profile_url": "https://nplt20league.com/player/mark-watt/profile/"
+        },
+        {
+          "name": "Sahibzada Farhan",
+          "role": "Batter",
+          "category": "Overseas",
+          "captain": false,
+          "photo_url": "https://nplt20league.com/uploads/sahibzada-farhan-mvmeondh-d7433f8e-2997-4e22-a483-1d6292c2c649.webp",
+          "profile_url": "https://nplt20league.com/player/sahibzada-farhan/profile/"
+        },
+        {
+          "name": "Sompal Kami",
+          "role": "All-rounder",
+          "category": "Domestic",
+          "captain": true,
+          "photo_url": "https://nplt20league.com/uploads/913f25db3cb1498082806fe76a1f29c1-mv2bxlw8-8bcbbc88-c04e-4c02-8962-8439f5e4b953.webp",
+          "profile_url": "https://nplt20league.com/player/sompal-kami/profile/"
+        },
+        {
+          "name": "Gulshan Jha",
+          "role": "All-rounder",
+          "category": "Domestic",
+          "captain": false,
+          "photo_url": "https://nplt20league.com/uploads/gulshan-kumar-jha-mv2c598x-5ed727b4-20e8-40ee-b63c-a562f06da5cb.webp",
+          "profile_url": "https://nplt20league.com/player/gulshan-jha/profile/"
+        },
+        {
+          "name": "Nandan Yadav",
+          "role": "Bowler",
+          "category": "Domestic",
+          "captain": false,
+          "photo_url": "https://nplt20league.com/uploads/nandan-yadav-mv3reisu-293c4999-487d-4085-9bb3-01c7af9b808c.png",
+          "profile_url": "https://nplt20league.com/player/nandan-yadav/profile/"
+        },
+        {
+          "name": "Deepak Dumre",
+          "role": "Wicketkeeper",
+          "category": "Domestic",
+          "captain": false,
+          "photo_url": "https://nplt20league.com/uploads/dipak-dumre-mv3rjv5v-ae34613a-d844-4aaf-a889-9342046d64ce.png",
+          "profile_url": "https://nplt20league.com/player/deepak-dumre/profile/"
+        },
+        {
+          "name": "Pawan Sarraf",
+          "role": "All-rounder",
+          "category": "Domestic",
+          "captain": false,
+          "photo_url": "https://nplt20league.com/uploads/pawan-sarraf-mv2c8xo2-0adf65c4-452c-467c-a153-9be3168a2b42.png",
+          "profile_url": "https://nplt20league.com/player/pawan-sarraf/profile/"
+        },
+        {
+          "name": "Unish Bikram Singh",
+          "role": "All-rounder",
+          "category": "Domestic",
+          "captain": false,
+          "photo_url": "https://nplt20league.com/uploads/unish-bs-thakuri-2-mv3rp2y1-d92b8900-c01a-4da8-98e9-e44b789544bd.png",
+          "profile_url": "https://nplt20league.com/player/unish-bikram-singh/profile/"
+        },
+        {
+          "name": "Yuvraj Khatri",
+          "role": "Bowler",
+          "category": "Domestic",
+          "captain": false,
+          "photo_url": "https://nplt20league.com/uploads/yuvraj-khatri-mv3rzf71-1584a607-0486-424e-932f-e11b7f346f2a.png",
+          "profile_url": "https://nplt20league.com/player/yuvraj-khatri/profile/"
+        },
+        {
+          "name": "Shubh Kansakar",
+          "role": "All-rounder",
+          "category": "Domestic",
+          "captain": false,
+          "photo_url": "https://nplt20league.com/uploads/shubh-kansakar-mv3rrsbo-792000e9-8817-4be6-b5e0-07923a59de0b.png",
+          "profile_url": "https://nplt20league.com/player/shubh-kansakar/profile/"
+        },
+        {
+          "name": "Bipin Sharma",
+          "role": "All-rounder",
+          "category": "Domestic",
+          "captain": false,
+          "photo_url": "https://nplt20league.com/uploads/bipin-sharma-mv3rv6z5-36b16504-99ee-4f6d-9539-91a211581a19.png",
+          "profile_url": "https://nplt20league.com/player/bipin-sharma/profile/"
+        },
+        {
+          "name": "Dipendra Rawat",
+          "role": "Bowler",
+          "category": "Domestic",
+          "captain": false,
+          "photo_url": "https://nplt20league.com/uploads/dipendra-rawat-mv2eyvm0-06b45e09-1a30-486b-9045-3011d8e45a0f.png",
+          "profile_url": "https://nplt20league.com/player/dipendra-rawat/profile/"
+        },
+        {
+          "name": "Surya Tamang",
+          "role": "Bowler",
+          "category": "Domestic",
+          "captain": false,
+          "photo_url": "https://nplt20league.com/uploads/surya-tamang-mv3s3bly-9fe6544e-386a-4ea6-bca5-c452615054a9.png",
+          "profile_url": "https://nplt20league.com/player/surya-tamang/profile/"
+        },
+        {
+          "name": "Sachin Sharma",
+          "role": "Batter",
+          "category": "Domestic",
+          "captain": false,
+          "photo_url": "https://nplt20league.com/uploads/sachin-sharma-mv3s7zey-cc07e78f-4876-4d43-a12d-89d0a954a3a9.png",
+          "profile_url": "https://nplt20league.com/player/sachin-sharma/profile/"
+        }
+      ]
+    },
+    {
+      "slug": "kathmandu-gurkhas",
+      "name": "Kathmandu Gurkhas",
+      "short_name": "KTM",
+      "logo_url": "https://nplt20league.com/uploads/kathmandu-gorkhas-munr7jo9-d87b63b2-7552-4f75-abd2-0d26591dc832.png",
+      "players": [
+        {
+          "name": "David Warner",
+          "role": "Batter",
+          "category": "Overseas",
+          "captain": false,
+          "photo_url": "https://nplt20league.com/uploads/david-warner-mv9ahb1x-03ef708c-92ff-46bf-8dd2-9b2a29db0009.webp",
+          "profile_url": "https://nplt20league.com/player/david-warner/profile/"
+        },
+        {
+          "name": "Harishankar Shah",
+          "role": "All-rounder",
+          "category": "Domestic",
+          "captain": false,
+          "photo_url": "https://nplt20league.com/uploads/harishankar-shah-mvt9mse9-08e84498-00d9-4709-86e6-1dcc5b131203.webp",
+          "profile_url": "https://nplt20league.com/player/harishankar-shah/profile/"
+        },
+        {
+          "name": "Jahandad Khan",
+          "role": "All-rounder",
+          "category": "Overseas",
+          "captain": false,
+          "photo_url": "https://nplt20league.com/uploads/jahandad-khan-mvtlbckd-6ad5d26a-99f6-48b2-89b9-29edcd8b8ad5.webp",
+          "profile_url": "https://nplt20league.com/player/jahandad-khan/profile/"
+        },
+        {
+          "name": "Karan KC",
+          "role": "All-rounder",
+          "category": "Domestic",
+          "captain": true,
+          "photo_url": "https://nplt20league.com/uploads/karan-kc-mv9avvmj-8058109c-3b06-4ece-bbd2-134108e89e2a.webp",
+          "profile_url": "https://nplt20league.com/player/karan-kc/profile/"
+        },
+        {
+          "name": "KS Bharat",
+          "role": "Wicketkeeper",
+          "category": "Overseas",
+          "captain": false,
+          "photo_url": "https://nplt20league.com/uploads/k-s-bharat-mv9hzbxg-0d6db712-a766-4693-b1dc-4707915a973e.webp",
+          "profile_url": "https://nplt20league.com/player/ks-bharat/profile/"
+        },
+        {
+          "name": "Ripon Mondol",
+          "role": "Bowler",
+          "category": "Overseas",
+          "captain": false,
+          "photo_url": "https://nplt20league.com/uploads/ripon-mondol-mvtln8yn-f3091a64-cdf7-45a7-9f28-4df22626253c.webp",
+          "profile_url": "https://nplt20league.com/player/ripon-mondol/profile/"
+        },
+        {
+          "name": "Sahan Arachchige",
+          "role": "All-rounder",
+          "category": "Overseas",
+          "captain": false,
+          "photo_url": "https://nplt20league.com/uploads/sahan-arachchinge-mv9auuhk-9ac686d8-b36e-46b6-a964-eb69066eca53.webp",
+          "profile_url": "https://nplt20league.com/player/sahan-arachchige/profile/"
+        },
+        {
+          "name": "Sam Heazlett",
+          "role": "Batter",
+          "category": "Overseas",
+          "captain": false,
+          "photo_url": "https://nplt20league.com/uploads/2894c1eb-c8e7-4411-998b-2fe7571e94c1-photoroom-mvnkmsf1-b4a9c2bb-0c17-4541-bdb8-03c4c3017a2c.png",
+          "profile_url": "https://nplt20league.com/player/sam-heazlett/profile/"
+        },
+        {
+          "name": "Smit Patel",
+          "role": "Batter",
+          "category": "Overseas",
+          "captain": false,
+          "photo_url": "https://nplt20league.com/uploads/smit-patel-mvmb6xko-b9ef83d2-7ae5-4511-b744-cfc713a9a9dd.webp",
+          "profile_url": "https://nplt20league.com/player/smit-patel/profile/"
+        },
+        {
+          "name": "Bhim Sharki",
+          "role": "Batter",
+          "category": "Domestic",
+          "captain": false,
+          "photo_url": "https://nplt20league.com/uploads/bhim-sharki-mv9ag1ds-f470763c-1ace-4ac9-bf38-8c5e3fc19859.webp",
+          "profile_url": "https://nplt20league.com/player/bhim-sharki/profile/"
+        },
+        {
+          "name": "Mohammad Aadil Alam",
+          "role": "All-rounder",
+          "category": "Domestic",
+          "captain": false,
+          "photo_url": "https://nplt20league.com/uploads/mohammad-aadil-alam-mv9at2dm-d2191f34-f60b-45ab-92a4-3466775fd199.webp",
+          "profile_url": "https://nplt20league.com/player/mohammad-aadil-alam/profile/"
+        },
+        {
+          "name": "Rashid Khan",
+          "role": "Bowler",
+          "category": "Domestic",
+          "captain": false,
+          "photo_url": "https://nplt20league.com/uploads/rashid-khan-mv9aksrd-8f0ab360-2fbf-49d4-bd15-74a46f55dc68.webp",
+          "profile_url": "https://nplt20league.com/player/rashid-khan/profile/"
+        },
+        {
+          "name": "Santosh Yadav",
+          "role": "All-rounder",
+          "category": "Domestic",
+          "captain": false,
+          "photo_url": "https://nplt20league.com/uploads/santosh-yadav-mv9arpnk-26df495f-e2bf-467d-a5a2-fed667ab1b55.webp",
+          "profile_url": "https://nplt20league.com/player/santosh-yadav/profile/"
+        },
+        {
+          "name": "Krishna Paudel",
+          "role": "Bowler",
+          "category": "Domestic",
+          "captain": false,
+          "photo_url": "https://nplt20league.com/uploads/krishna-poudel-mv9j3ef1-57b070c7-d9e2-4623-bfd0-3cbee65d4982.webp",
+          "profile_url": "https://nplt20league.com/player/krishna-paudel/profile/"
+        },
+        {
+          "name": "Shahab Alam",
+          "role": "Bowler",
+          "category": "Domestic",
+          "captain": false,
+          "photo_url": "https://nplt20league.com/uploads/shahab-alam-mv9ajsx0-e1e2920d-cdfd-43ff-9708-8f59896272df.webp",
+          "profile_url": "https://nplt20league.com/player/shahab-alam/profile/"
+        },
+        {
+          "name": "Sahil Patel",
+          "role": "Batter",
+          "category": "Domestic",
+          "captain": false,
+          "photo_url": "https://nplt20league.com/uploads/sahil-patel-mv9abmic-a04cf2d3-2251-41ff-a378-bce914e6cb7a.webp",
+          "profile_url": "https://nplt20league.com/player/sahil-patel/profile/"
+        },
+        {
+          "name": "Prasiddha Jaishi",
+          "role": "All-rounder",
+          "category": "Domestic",
+          "captain": false,
+          "photo_url": "https://nplt20league.com/uploads/prasiddha-jaishi-mv9aorno-48a882f9-c4a8-4f4a-a31a-9c43d3bb82c6.webp",
+          "profile_url": "https://nplt20league.com/player/prasiddha-jaishi/profile/"
+        },
+        {
+          "name": "Dayanand Mandal",
+          "role": "Bowler",
+          "category": "Domestic",
+          "captain": false,
+          "photo_url": "https://nplt20league.com/uploads/dayanand-mandal-mv9aimjs-c4a245b7-af28-4878-9ef7-7b4fa7481e0c.webp",
+          "profile_url": "https://nplt20league.com/player/dayanand-mandal/profile/"
+        },
+        {
+          "name": "Sonu Devkota",
+          "role": "Bowler",
+          "category": "Domestic",
+          "captain": false,
+          "photo_url": "https://nplt20league.com/uploads/sonu-devkota-mv9azh5m-004fd8f0-3324-44fe-83b4-618c2e9a6114.webp",
+          "profile_url": "https://nplt20league.com/player/sonu-devkota/profile/"
+        },
+        {
+          "name": "Dev Shah",
+          "role": "All-rounder",
+          "category": "Domestic",
+          "captain": false,
+          "photo_url": "https://nplt20league.com/uploads/dev-shah-mv9alnq5-b3f393e2-850d-426c-b951-2082f055c5b5.webp",
+          "profile_url": "https://nplt20league.com/player/dev-shah/profile/"
+        },
+        {
+          "name": "Suryanshu Koirala",
+          "role": "Batter",
+          "category": "Domestic",
+          "captain": false,
+          "photo_url": "https://nplt20league.com/uploads/suryanshu-koirala-mv9b0cst-5ad637f9-32ea-44a2-8193-e252d576138a.webp",
+          "profile_url": "https://nplt20league.com/player/suryanshu-koirala/profile/"
+        }
+      ]
+    },
+    {
+      "slug": "lumbini-lions",
+      "name": "Lumbini Lions",
+      "short_name": "LL",
+      "logo_url": "https://nplt20league.com/uploads/lumbini-lions-munr848o-0ceefcea-6954-4563-8fc2-0dd99f0835fb.png",
+      "players": [
+        {
+          "name": "D’Arcy Short",
+          "role": "All-rounder",
+          "category": "Overseas",
+          "captain": false,
+          "photo_url": "https://nplt20league.com/uploads/d-arcy-short-new-mvaw4g48-485f8e7f-c89d-464f-aedf-4571e7b54253.webp",
+          "profile_url": "https://nplt20league.com/player/darcy-short/profile/"
+        },
+        {
+          "name": "Grant Stewart",
+          "role": "Batter",
+          "category": "Overseas",
+          "captain": false,
+          "photo_url": "https://nplt20league.com/uploads/grant-stewart-mvqtfw30-dad74357-c5e9-421e-bcff-3db9c9782731.webp",
+          "profile_url": "https://nplt20league.com/player/grant-stewart/profile/"
+        },
+        {
+          "name": "Niroshan Dickwella",
+          "role": "Batter",
+          "category": "Overseas",
+          "captain": false,
+          "photo_url": "https://nplt20league.com/uploads/niroshan-dickwella-new-mvaw0yup-1118ff12-ca0c-4b53-ae8b-052d78180221.webp",
+          "profile_url": "https://nplt20league.com/player/niroshan-dickwella/profile/"
+        },
+        {
+          "name": "Rohit Paudel",
+          "role": "Batter",
+          "category": "Domestic",
+          "captain": true,
+          "photo_url": "https://nplt20league.com/uploads/rohit-paudel-mvavxzqz-d54ddd51-a3bc-48d3-9bd5-4ec5b594e12c.webp",
+          "profile_url": "https://nplt20league.com/player/rohit-paudel/profile/"
+        },
+        {
+          "name": "Ruben Trumpelmann",
+          "role": "Bowler",
+          "category": "Overseas",
+          "captain": false,
+          "photo_url": "https://nplt20league.com/uploads/ruben-trumpelmann-mvaweciw-b77b2d85-7966-4bda-969e-472af039b5a6.webp",
+          "profile_url": "https://nplt20league.com/player/ruben-trumpelmann/profile/"
+        },
+        {
+          "name": "Shadley van Schalkwyk",
+          "role": "All-rounder",
+          "category": "Overseas",
+          "captain": false,
+          "photo_url": "https://nplt20league.com/uploads/shadley-van-schalkwyk-mvo7eq5a-17246fce-daae-47f9-ae7c-245d2937f715.webp",
+          "profile_url": "https://nplt20league.com/player/shadley-van-schalkwyk/profile/"
+        },
+        {
+          "name": "Shamim Hossain",
+          "role": "All-rounder",
+          "category": "Overseas",
+          "captain": false,
+          "photo_url": "https://nplt20league.com/uploads/shamim-hossain-mvlfsint-ea78ef3b-da78-4a54-a22a-c1fc002069c1.webp",
+          "profile_url": "https://nplt20league.com/player/shamim-hossain/profile/"
+        },
+        {
+          "name": "Sundeep Jora",
+          "role": "Batter",
+          "category": "Domestic",
+          "captain": false,
+          "photo_url": "https://nplt20league.com/uploads/sundeep-jora-1-mvawc4bd-90161500-5bf4-46a4-84c3-1d12328935fe.webp",
+          "profile_url": "https://nplt20league.com/player/sundeep-jora/profile/"
+        },
+        {
+          "name": "Sher Malla",
+          "role": "All-rounder",
+          "category": "Domestic",
+          "captain": false,
+          "photo_url": "https://nplt20league.com/uploads/sher-malla-new-mvaw37fz-2058d12b-f04c-406b-8b6b-063913d796c0.webp",
+          "profile_url": "https://nplt20league.com/player/sher-malla/profile/"
+        },
+        {
+          "name": "Dilip Nath",
+          "role": "Wicketkeeper",
+          "category": "Domestic",
+          "captain": false,
+          "photo_url": "https://nplt20league.com/uploads/dilip-nath-1-mvawaajp-57b7fab6-a0b5-42ee-8b0a-955a22c9ddd9.webp",
+          "profile_url": "https://nplt20league.com/player/dilip-nath/profile/"
+        },
+        {
+          "name": "Dinesh Adhikari",
+          "role": "Bowler",
+          "category": "Domestic",
+          "captain": false,
+          "photo_url": "https://nplt20league.com/uploads/dinesh-adhikari-2-mvaw6clk-8595e65a-1a67-436e-9679-5e6283fea83d.webp",
+          "profile_url": "https://nplt20league.com/player/dinesh-adhikari/profile/"
+        },
+        {
+          "name": "Abhishesh Gautam",
+          "role": "Bowler",
+          "category": "Domestic",
+          "captain": false,
+          "photo_url": "https://nplt20league.com/uploads/abhishesh-gautam-1-mvawb38n-04e28f0f-d250-445c-9e46-ba68cf163ffc.webp",
+          "profile_url": "https://nplt20league.com/player/abhishesh-gautam/profile/"
+        },
+        {
+          "name": "Tilak Bhandari",
+          "role": "Bowler",
+          "category": "Domestic",
+          "captain": false,
+          "photo_url": "https://nplt20league.com/uploads/tilak-bhandari-1-mvaw9hwk-810e9383-35f9-4563-a266-88dab2990f28.webp",
+          "profile_url": "https://nplt20league.com/player/tilak-bhandari/profile/"
+        },
+        {
+          "name": "Aasif Sheikh",
+          "role": "Wicketkeeper",
+          "category": "Domestic",
+          "captain": false,
+          "photo_url": "https://nplt20league.com/uploads/aasif-sheikh-1-mvaw8qfg-9df67e97-bb28-4caf-a41c-e0e203d352dd.webp",
+          "profile_url": "https://nplt20league.com/player/aasif-sheikh/profile/"
+        },
+        {
+          "name": "Kishore Mahato",
+          "role": "Bowler",
+          "category": "Domestic",
+          "captain": false,
+          "photo_url": "https://nplt20league.com/uploads/kishor-mahato-mvaw5alk-91696c8a-07a2-4f0b-844d-4535ddf2bc62.webp",
+          "profile_url": "https://nplt20league.com/player/kishore-mahato/profile/"
+        },
+        {
+          "name": "Durgesh Gupta",
+          "role": "Bowler",
+          "category": "Domestic",
+          "captain": false,
+          "photo_url": "https://nplt20league.com/uploads/durgesh-gupta-1-mvaw7uzo-6aab8252-c9bf-4c3b-b1e2-80295fbe1323.webp",
+          "profile_url": "https://nplt20league.com/player/durgesh-gupta/profile/"
+        },
+        {
+          "name": "Aakash Tripathi",
+          "role": "Batter",
+          "category": "Domestic",
+          "captain": false,
+          "photo_url": "https://nplt20league.com/uploads/aakash-tripathi-1-mvaw73e4-7c51fb71-df24-4dfc-88b5-00212587b00d.webp",
+          "profile_url": "https://nplt20league.com/player/aakash-tripathi/profile/"
+        },
+        {
+          "name": "Ajay Chauhan",
+          "role": "Bowler",
+          "category": "Domestic",
+          "captain": false,
+          "photo_url": "https://nplt20league.com/uploads/ajay-chauhan-new-mvaw27lr-005d0671-10ad-4ee1-ab69-da151c448da2.webp",
+          "profile_url": "https://nplt20league.com/player/ajay-chauhan/profile/"
+        },
+        {
+          "name": "Arniko Yadav",
+          "role": "All-rounder",
+          "category": "Domestic",
+          "captain": false,
+          "photo_url": "https://nplt20league.com/uploads/arniko-prasad-yadav-mvavwirq-27e55c02-0163-4d0a-b12b-240ce2cd3dcb.webp",
+          "profile_url": "https://nplt20league.com/player/arniko-prasad-yadav/profile/"
+        }
+      ]
+    },
+    {
+      "slug": "pokhara-avengers",
+      "name": "Pokhara Avengers",
+      "short_name": "PKR",
+      "logo_url": "https://nplt20league.com/uploads/pokhara-avengers-munr8hr5-7107d2b5-167f-486b-a5b3-eef13874044a.png",
+      "players": [
+        {
+          "name": "Chamika Karunaratne",
+          "role": "All-rounder",
+          "category": "Overseas",
+          "captain": false,
+          "photo_url": "https://nplt20league.com/uploads/npl-2-mvf158gm-2065b7be-cdc5-482e-b8ce-c8c0cfcd5fad.webp",
+          "profile_url": "https://nplt20league.com/player/chamika-karunaratne/profile/"
+        },
+        {
+          "name": "Dhananjaya Lakshan",
+          "role": "All-rounder",
+          "category": "Overseas",
+          "captain": false,
+          "photo_url": "https://nplt20league.com/uploads/pa-players-15-mvi1hd8z-7a682117-8bd7-4753-842a-dbd6dc2dcee2.webp",
+          "profile_url": "https://nplt20league.com/player/dhananjaya-lakshan/profile/"
+        },
+        {
+          "name": "Kushal Bhurtel",
+          "role": "Batter",
+          "category": "Domestic",
+          "captain": true,
+          "photo_url": "https://nplt20league.com/uploads/pa-players-mvi16vxj-dc4f983e-7390-41aa-b49c-018a2501da71.png",
+          "profile_url": "https://nplt20league.com/player/kushal-bhurtel/profile/"
+        },
+        {
+          "name": "Mahedi Hasan",
+          "role": "All-rounder",
+          "category": "Overseas",
+          "captain": false,
+          "photo_url": "https://nplt20league.com/uploads/mahedi-hasan-mvi1nm4z-65af3025-71b7-4226-9abb-96b111ee5a9e.webp",
+          "profile_url": "https://nplt20league.com/player/mahedi-hasan/profile/"
+        },
+        {
+          "name": "Mohammad Saifuddin",
+          "role": "All-rounder",
+          "category": "Overseas",
+          "captain": false,
+          "photo_url": "https://nplt20league.com/uploads/pokhara-avengers-sign-mohammad-saifuddin-for-npl-2026-mvkxheit-3b747ed1-0e81-49c3-aa6e-fc7156164eb4.webp",
+          "profile_url": "https://nplt20league.com/player/mohammad-saifuddin/profile/"
+        },
+        {
+          "name": "Sadeera Samarawickrama",
+          "role": "Batter",
+          "category": "Overseas",
+          "captain": false,
+          "photo_url": "https://nplt20league.com/uploads/sadeera-samarawickrama-mvrwoqzd-1ee43909-6900-4cc3-87ab-dff4e54317c9.webp",
+          "profile_url": "https://nplt20league.com/player/sadeera-samarawickrama/profile/"
+        },
+        {
+          "name": "Shakib AL Hasan",
+          "role": "All-rounder",
+          "category": "Overseas",
+          "captain": false,
+          "photo_url": "https://nplt20league.com/uploads/pa-players-13-mvi1av06-72b7fb68-2989-43d0-9bed-356e26000087.webp",
+          "profile_url": "https://nplt20league.com/player/shakib-al-hasan/profile/"
+        },
+        {
+          "name": "Sunny BK",
+          "role": "All-rounder",
+          "category": "Domestic",
+          "captain": false,
+          "photo_url": "https://nplt20league.com/uploads/sunny-bk-mv23aot8-65a80ce2-3782-46ca-8e9e-f8fb2e8413ba.webp",
+          "profile_url": "https://nplt20league.com/player/sunny-bk/profile/"
+        },
+        {
+          "name": "Sagar Dhakal",
+          "role": "Bowler",
+          "category": "Domestic",
+          "captain": false,
+          "photo_url": "https://nplt20league.com/uploads/sagar-dhakal-muu2jito-1603db15-12f0-4c89-9cfa-abfb7852b576.webp",
+          "profile_url": "https://nplt20league.com/player/sagar-dhakal/profile/"
+        },
+        {
+          "name": "Arjun Kumal",
+          "role": "All-rounder",
+          "category": "Domestic",
+          "captain": false,
+          "photo_url": "https://nplt20league.com/uploads/arjun-kumal-muu2koyu-9856e7ec-044c-48da-8ffb-b67f54810ac5.webp",
+          "profile_url": "https://nplt20league.com/player/arjun-kumal/profile/"
+        },
+        {
+          "name": "Bipin Khatri",
+          "role": "All-rounder",
+          "category": "Domestic",
+          "captain": false,
+          "photo_url": "https://nplt20league.com/uploads/bipin-khatri-muu2i6p3-49fbefbf-8349-440c-bea5-d8f5ae011b3e.webp",
+          "profile_url": "https://nplt20league.com/player/bipin-khatri/profile/"
+        },
+        {
+          "name": "Aakash Chand",
+          "role": "Bowler",
+          "category": "Domestic",
+          "captain": false,
+          "photo_url": "https://nplt20league.com/uploads/akash-chand-muu2rypk-0f736270-27cd-4036-a067-e13b927c0635.webp",
+          "profile_url": "https://nplt20league.com/player/aakash-chand/profile/"
+        },
+        {
+          "name": "Kiran Thagunna",
+          "role": "All-rounder",
+          "category": "Domestic",
+          "captain": false,
+          "photo_url": "https://nplt20league.com/uploads/kiran-kumar-thagunna-muu2pnf3-8ea0aa25-3920-4609-850f-89efbd23e92c.webp",
+          "profile_url": "https://nplt20league.com/player/kiran-thagunna/profile/"
+        },
+        {
+          "name": "Dinesh Kharel",
+          "role": "Batter",
+          "category": "Domestic",
+          "captain": false,
+          "photo_url": "https://nplt20league.com/uploads/dinesh-kharel-muu2lqgh-6baa6143-d323-4285-af68-5f123b65bebc.webp",
+          "profile_url": "https://nplt20league.com/player/dinesh-kharel/profile/"
+        },
+        {
+          "name": "Arjun Gharti",
+          "role": "All-rounder",
+          "category": "Domestic",
+          "captain": false,
+          "photo_url": "https://nplt20league.com/uploads/arjun-gharti-mv2087br-d1e5901c-581c-4a8c-8386-cec0f6eca5e5.webp",
+          "profile_url": "https://nplt20league.com/player/arjun-gharti/profile/"
+        },
+        {
+          "name": "Sudip Aryal",
+          "role": "Bowler",
+          "category": "Domestic",
+          "captain": false,
+          "photo_url": "https://nplt20league.com/uploads/sudip-aryal-mv20bd8r-3f6a417a-ffeb-49b7-bbca-53ec2e0c583f.webp",
+          "profile_url": "https://nplt20league.com/player/sudip-aryal/profile/"
+        },
+        {
+          "name": "Bibek Rana Magar",
+          "role": "Bowler",
+          "category": "Domestic",
+          "captain": false,
+          "photo_url": "https://nplt20league.com/uploads/bibek-rana-magar-mv20d7wt-91837965-6318-49de-844a-61ce4f91b4fd.webp",
+          "profile_url": "https://nplt20league.com/player/bibek-rana-magar/profile/"
+        },
+        {
+          "name": "Pratik Pokharel",
+          "role": "Bowler",
+          "category": "Domestic",
+          "captain": false,
+          "photo_url": "https://nplt20league.com/uploads/pratik-mv20f52j-319010d6-42f5-43ee-87ec-0d581bed216c.webp",
+          "profile_url": "https://nplt20league.com/player/pratik-pokharel/profile/"
+        },
+        {
+          "name": "Bipin Acharya",
+          "role": "All-rounder",
+          "category": "Domestic",
+          "captain": false,
+          "photo_url": "https://nplt20league.com/uploads/bipin-acharya-1-mv208x4e-3be55dd4-1009-4efd-94eb-a09ea22ee2d9.webp",
+          "profile_url": "https://nplt20league.com/player/bipin-acharya/profile/"
+        }
+      ]
+    },
+    {
+      "slug": "sudurpaschim-royals",
+      "name": "Sudurpaschim Royals",
+      "short_name": "SR",
+      "logo_url": "https://nplt20league.com/uploads/391989-cqkiosfychqheu4pj2g6c6yhvlvjob-f05af760-4d4dcd04-a451-4c71-a2af-cf69298c3351.png",
+      "players": [
+        {
+          "name": "Anil Kharel",
+          "role": "Bowler",
+          "category": "Domestic",
+          "captain": false,
+          "photo_url": "https://nplt20league.com/uploads/anil-kharel-mvt3uza7-800c5278-f95b-42c3-94b8-a3735b8ab55e.webp",
+          "profile_url": "https://nplt20league.com/player/anil-kharel/profile/"
+        },
+        {
+          "name": "Brandon McMullen",
+          "role": "All-rounder",
+          "category": "Overseas",
+          "captain": false,
+          "photo_url": "https://nplt20league.com/uploads/brandon-mcmullen-mv96oqq2-cac97aa1-e822-456a-bf7c-3df5f5739f71.webp",
+          "profile_url": "https://nplt20league.com/player/brandon-mcmullen/profile/"
+        },
+        {
+          "name": "Dipendra Singh Airee",
+          "role": "All-rounder",
+          "category": "Domestic",
+          "captain": true,
+          "photo_url": "https://nplt20league.com/uploads/dipendra-singh-airee-mv8hc2gt-124e0a43-c780-4f71-83eb-c78119e8272e.webp",
+          "profile_url": "https://nplt20league.com/player/dipendra-singh-airee/profile/"
+        },
+        {
+          "name": "Fabian Allen",
+          "role": "All-rounder",
+          "category": "Overseas",
+          "captain": false,
+          "photo_url": "https://nplt20league.com/uploads/fabian-allen-signs-for-sudurpaschim-royals-in-npl-2026-mvnbk37y-8f9a0c41-5c0a-4bda-9e9e-a47bb3a0ba6a.webp",
+          "profile_url": "https://nplt20league.com/player/fabian-allen/profile/"
+        },
+        {
+          "name": "Saif Zaib",
+          "role": "All-rounder",
+          "category": "Overseas",
+          "captain": false,
+          "photo_url": "https://nplt20league.com/uploads/saif-zaib-mvt3un49-8c1422be-3314-4dcc-9b64-0fd7a835c69e.webp",
+          "profile_url": "https://nplt20league.com/player/saif-zaib/profile/"
+        },
+        {
+          "name": "Scott Kuggeleijn",
+          "role": "All-rounder",
+          "category": "Overseas",
+          "captain": false,
+          "photo_url": "https://nplt20league.com/uploads/scott-kuggeleijn-mv92r1yu-40e26d0a-55c2-43a4-9165-2e2157ff515c.webp",
+          "profile_url": "https://nplt20league.com/player/scott-kuggeleijn/profile/"
+        },
+        {
+          "name": "Sherfane Rutherford",
+          "role": "All-rounder",
+          "category": "Overseas",
+          "captain": false,
+          "photo_url": "https://nplt20league.com/uploads/sherfane-rutherford-joins-sudurpaschim-royals-mvlz39yn-eedf5e23-9c6e-4a70-b4a8-c1df30dfa7f8.webp",
+          "profile_url": "https://nplt20league.com/player/sherfane-rutherford/profile/"
+        },
+        {
+          "name": "Tek Raj Thalal",
+          "role": "Bowler",
+          "category": "Domestic",
+          "captain": false,
+          "photo_url": "https://nplt20league.com/uploads/tek-raj-thalal-mvayk5am-9d616e12-be21-4b82-818e-3dfb7e4ddf62.webp",
+          "profile_url": "https://nplt20league.com/player/tek-raj-thalal/profile/"
+        },
+        {
+          "name": "Tharindu Rathnayake",
+          "role": "All-rounder",
+          "category": "Overseas",
+          "captain": false,
+          "photo_url": "https://nplt20league.com/uploads/tharindu-rathnayake-mvrv8gxv-95e732b0-634a-4e1c-8ddd-c6de695a1502.webp",
+          "profile_url": "https://nplt20league.com/player/tharindu-rathnayake/profile/"
+        },
+        {
+          "name": "Binod Bhandari",
+          "role": "Batter",
+          "category": "Domestic",
+          "captain": false,
+          "photo_url": "https://nplt20league.com/uploads/binod-bhandari-mv8hgb32-160edc9a-039d-4348-bfb7-1355a154705b.webp",
+          "profile_url": "https://nplt20league.com/player/binod-bhandari/profile/"
+        },
+        {
+          "name": "Aarif Sheikh",
+          "role": "All-rounder",
+          "category": "Domestic",
+          "captain": false,
+          "photo_url": "https://nplt20league.com/uploads/aarif-sheikh-mv8j1u8h-04ab3820-b4dd-47b4-9444-f087e7c1ad6b.webp",
+          "profile_url": "https://nplt20league.com/player/aarif-sheikh/profile/"
+        },
+        {
+          "name": "Ishan Pandey",
+          "role": "All-rounder",
+          "category": "Domestic",
+          "captain": false,
+          "photo_url": "https://nplt20league.com/uploads/ishan-pandey-mv8inwem-a5143eb0-dd06-406d-a871-64b634f0703e.webp",
+          "profile_url": "https://nplt20league.com/player/ishan-pandey/profile/"
+        },
+        {
+          "name": "Abinash Bohara",
+          "role": "Bowler",
+          "category": "Domestic",
+          "captain": false,
+          "photo_url": "https://nplt20league.com/uploads/abinash-bohara-mv8il7jl-a279d2c2-53e8-43fc-9be2-2223526fc00a.webp",
+          "profile_url": "https://nplt20league.com/player/abinash-bohara/profile/"
+        },
+        {
+          "name": "Hemant Dhami",
+          "role": "Bowler",
+          "category": "Domestic",
+          "captain": false,
+          "photo_url": "https://nplt20league.com/uploads/hemant-dhami-mv8irhc5-45090315-91dc-4bf2-83d5-a390bfe221f4.webp",
+          "profile_url": "https://nplt20league.com/player/hemant-dhami/profile/"
+        },
+        {
+          "name": "Hikmat Mahara",
+          "role": "Bowler",
+          "category": "Domestic",
+          "captain": false,
+          "photo_url": "https://nplt20league.com/uploads/hikmat-mahara-mv8itg7h-62524710-c91f-4728-a39e-6bb1799e2e1f.webp",
+          "profile_url": "https://nplt20league.com/player/hikmat-mahara/profile/"
+        },
+        {
+          "name": "Dipak Bohara",
+          "role": "Batter",
+          "category": "Domestic",
+          "captain": false,
+          "photo_url": "https://nplt20league.com/uploads/dipak-bohara-mv8hjzmm-59f4498c-acda-4482-b642-b846e9bd8483.webp",
+          "profile_url": "https://nplt20league.com/player/dipak-bohara/profile/"
+        },
+        {
+          "name": "Milan Bohara",
+          "role": "Bowler",
+          "category": "Domestic",
+          "captain": false,
+          "photo_url": "https://nplt20league.com/uploads/milan-bohara-mv8ive9y-ec8ee8ca-915f-4227-a53c-f92cafd84a67.webp",
+          "profile_url": "https://nplt20league.com/player/milan-bohara/profile/"
+        },
+        {
+          "name": "Tek Rawat",
+          "role": "All-rounder",
+          "category": "Domestic",
+          "captain": false,
+          "photo_url": "https://nplt20league.com/uploads/tek-rawt-mv8ippd8-4bfa43cd-61d3-41de-a1d2-9fa88b354509.webp",
+          "profile_url": "https://nplt20league.com/player/tek-rawat/profile/"
+        },
+        {
+          "name": "Sachin Bhatt",
+          "role": "Bowler",
+          "category": "Domestic",
+          "captain": false,
+          "photo_url": "https://nplt20league.com/uploads/sachin-bhhata-mv8iz1dv-a3a05bf4-f609-4798-a97f-be3136830e0a.webp",
+          "profile_url": "https://nplt20league.com/player/sachin-bhatt/profile/"
+        },
+        {
+          "name": "Ayub Chand",
+          "role": "All-rounder",
+          "category": "Domestic",
+          "captain": false,
+          "photo_url": "https://nplt20league.com/uploads/ayub-chand-mv92cj7r-1b99e504-dd26-4a6d-9ef9-9eb2ece45808.webp",
+          "profile_url": "https://nplt20league.com/player/ayub-chand/profile/"
+        }
+      ]
+    }
+  ]
+}

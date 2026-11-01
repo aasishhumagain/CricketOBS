@@ -4,7 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>CricketOBS • Roster</title>
-    <link rel="stylesheet" href="/static/studio.css">
+    <link rel="stylesheet" href="/static/studio.css?v=overlay-ui-3">
+    <link rel="stylesheet" href="/static/roster.css?v=uncropped-20261101">
   </head>
   <body>
     <div class="app-shell">
@@ -18,73 +19,70 @@
           <a href="/toss">Toss</a>
           <a href="/overlay" target="_blank">Overlay</a>
         </nav>
-      </header>
+      </header><section class="overlay-controls" aria-label="OBS overlay control"><div><strong>On-air overlay</strong><span id="on-air-scene" class="muted">Connecting...</span></div><div class="scene-buttons"><button type="button" class="secondary-btn" data-scene="score" aria-pressed="false">Live score</button><button type="button" class="secondary-btn" data-scene="countdown" aria-pressed="false">Countdown</button><button type="button" class="secondary-btn" data-scene="match-info" aria-pressed="false">Teams</button><button type="button" class="secondary-btn" data-scene="roster" aria-pressed="false">Squads</button><button type="button" class="secondary-btn" data-scene="playing-xi" aria-pressed="false">Playing XI</button><button type="button" class="secondary-btn" data-scene="toss" aria-pressed="false">Toss</button><button type="button" class="secondary-btn" data-scene="summary" aria-pressed="false">Match summary</button><button type="button" class="secondary-btn" data-scene="innings-break" aria-pressed="false">Innings break</button><button type="button" class="secondary-btn" data-scene="result" aria-pressed="false">Match result</button><button type="button" class="secondary-btn" data-scene="hidden" aria-pressed="false">Hide graphics</button></div><label class="field overlay-style-field"><span>Overlay visual style</span><select id="overlay-style"><option value="classic">Classic | red & navy</option><option value="midnight">Midnight | cyan & dark</option><option value="minimal">Minimal | white & green</option></select></label><p id="scene-error" role="alert"></p></section>
 
       <section class="hero">
         <div class="hero-card">
-          <div class="eyebrow">Roster management</div>
-          <h1>Add the full team squad</h1>
-          <p>Keep each squad separate with player names, roles, and a clean match-day list before the playing XI is finalized.</p>
+          <div class="eyebrow">Nepal Premier League · 2026</div>
+          <h1>Season 3 squads</h1>
+          <p>Eight teams, with their listed players stored in the local roster database. Select a team to review or update its squad.</p>
         </div>
-
-        <div class="hero-card">
-          <div class="eyebrow">Add player</div>
-          <div class="field-group">
-            <label class="field">
-              <span>Player name</span>
-              <input id="player-name" placeholder="Enter player name" />
-            </label>
-            <label class="field">
-              <span>Team</span>
-              <select id="player-team">
-                <option>Valley Falcons</option>
-                <option>Summit Strikers</option>
-              </select>
-            </label>
-            <button class="primary-btn" onclick="addPlayer()">Add to roster</button>
-          </div>
+        <div class="hero-card roster-summary">
+          <div class="eyebrow">Squad database</div>
+          <strong id="database-summary">Loading teams…</strong>
+          <span id="database-status" role="status">Connecting to local database</span>
         </div>
       </section>
 
-      <section class="grid">
-        <div class="panel">
-          <div class="eyebrow">Valley Falcons</div>
-          <h2>Squad</h2>
-          <div id="roster-team-a" class="list-stack">
-            <div class="item"><span>Aarav Shrestha</span><span>#1</span></div>
-            <div class="item"><span>Anish Gurung</span><span>#7</span></div>
-            <div class="item"><span>Bibek Pandey</span><span>#14</span></div>
-            <div class="item"><span>Nabin Tamang</span><span>#31</span></div>
-            <div class="item"><span>Rabin Karki</span><span>#55</span></div>
+      <section class="panel roster-panel">
+        <div class="roster-toolbar">
+          <label class="field team-picker">
+            <span>Team squad</span>
+            <select id="team-picker" aria-label="Select a team"></select>
+          </label>
+          <div class="roster-team-title">
+            <img id="team-logo" class="roster-team-logo" alt="" hidden>
+            <div class="eyebrow" id="team-season">NPL SEASON 3</div>
+            <h2 id="team-name">Select a team</h2>
+            <span id="player-count" class="muted"></span>
           </div>
         </div>
 
-        <div class="panel">
-          <div class="eyebrow">Summit Strikers</div>
-          <h2>Squad</h2>
-          <div id="roster-team-b" class="list-stack">
-            <div class="item"><span>Sanjay KC</span><span>#8</span></div>
-            <div class="item"><span>Prabin Rai</span><span>#9</span></div>
-            <div class="item"><span>Hari Thapa</span><span>#12</span></div>
-            <div class="item"><span>Rohit Shah</span><span>#21</span></div>
-            <div class="item"><span>Kushal Magar</span><span>#44</span></div>
-          </div>
+        <form id="add-player-form" class="add-player-form">
+          <label class="field player-name-field">
+            <span>Add player</span>
+            <input id="player-name" name="name" maxlength="80" placeholder="Player name" required>
+          </label>
+          <label class="field">
+            <span>Role</span>
+            <select id="player-role" name="role">
+              <option value="">Not listed</option>
+              <option>Batter</option>
+              <option>Bowler</option>
+              <option>Wicketkeeper</option>
+              <option>All-rounder</option>
+            </select>
+          </label>
+          <label class="field">
+            <span>Category</span>
+            <select id="player-category" name="category">
+              <option>Domestic</option>
+              <option>Overseas</option>
+            </select>
+          </label>
+          <label class="captain-toggle"><input id="player-captain" type="checkbox" name="captain"><span>Captain</span></label>
+          <button class="primary-btn" type="submit">Add player</button>
+        </form>
+
+        <div class="roster-list-heading">
+          <span>PLAYER</span><span>ROLE</span><span>CATEGORY</span><span></span>
         </div>
+        <div id="player-list" class="roster-list" aria-live="polite"></div>
+        <p id="roster-message" class="roster-message" role="status"></p>
+        <p class="roster-source">Imported team, player, logo, and portrait data from NPLT20League.com. The site states it is independent and not affiliated with official NPL; confirm changes against official team announcements.</p>
+        <a class="roster-source-link" href="https://nplt20league.com/teams/" target="_blank" rel="noreferrer">View roster source ↗</a>
       </section>
     </div>
-
-    <script>
-      function addPlayer() {
-        const name = document.getElementById('player-name').value.trim();
-        const team = document.getElementById('player-team').value;
-        if (!name) return;
-        const list = document.getElementById(team === 'Valley Falcons' ? 'roster-team-a' : 'roster-team-b');
-        const item = document.createElement('div');
-        item.className = 'item';
-        item.innerHTML = '<span>' + name + '</span><span>new</span>';
-        list.appendChild(item);
-        document.getElementById('player-name').value = '';
-      }
-    </script>
-  </body>
+    <script src="/static/roster.js?v=uncropped-20261101"></script>
+  <script src="/static/scene-control.js?v=overlay-ui-3"></script></body>
 </html>

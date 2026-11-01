@@ -27,12 +27,13 @@ class Innings:
 
 
 class Match:
-    teams = ('Valley Falcons', 'Summit Strikers')
+    teams = ('Kathmandu Gurkhas', 'Pokhara Avengers')
 
     def __init__(self, seed=42, overs=20, teams=None):
         self.rng = random.Random(seed)
         self.overs = overs
         self.teams = tuple(teams or type(self).teams)
+        self.lineups = [[], []]
         self.innings = [self.new_innings(0)]
         self.complete = False
         self.result = ''
@@ -41,8 +42,12 @@ class Match:
         self.sequence = 0
 
     def new_innings(self, index):
-        prefix = ('Falcon', 'Summit')[index]
-        return Innings(self.teams[index], [Batter(f'{prefix} {i:02}') for i in range(1, 12)])
+        prefixes = {'Kathmandu Gurkhas': 'KTM', 'Pokhara Avengers': 'PKR'}
+        prefix = prefixes.get(self.teams[index], self.teams[index][:3].upper())
+        players = [Batter(f'{prefix} Player {i}') for i in range(1, 12)]
+        if self.lineups[index]:
+            players = [Batter(name) for name in self.lineups[index]]
+        return Innings(self.teams[index], players)
 
     def step(self, outcome=None):
         if self.complete:

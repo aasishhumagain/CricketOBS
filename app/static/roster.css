@@ -1,0 +1,108 @@
+.roster-summary {
+  display: grid;
+  align-content: center;
+  gap: 8px;
+  min-height: 160px;
+}
+.roster-summary strong { font-size: 1.8rem; }
+.roster-summary span { color: var(--muted); }
+.roster-panel { margin-top: 6px; }
+.roster-toolbar {
+  display: grid;
+  grid-template-columns: minmax(210px, 0.7fr) minmax(0, 1.5fr);
+  align-items: end;
+  gap: 22px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+.team-picker select { min-height: 48px; font-size: 1rem; font-weight: 700; }
+.roster-team-title h2 { margin: 7px 0 3px; font-size: 1.7rem; }
+.roster-team-title .muted { font-size: 0.9rem; }
+.roster-team-title { position: relative; padding-left: 78px; min-height: 66px; display: flex; flex-direction: column; justify-content: center; }
+.roster-team-logo { position: absolute; left: 0; top: 50%; width: 62px; height: 62px; padding: 5px; transform: translateY(-50%); border: 1px solid rgba(255,255,255,0.12); border-radius: 8px; background: rgba(255,255,255,0.06); object-fit: contain; }
+.add-player-form {
+  display: grid;
+  grid-template-columns: minmax(180px, 1.7fr) minmax(130px, 1fr) minmax(120px, 0.9fr) auto auto;
+  align-items: end;
+  gap: 12px;
+  padding: 20px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+.add-player-form .primary-btn { min-height: 44px; white-space: nowrap; }
+.captain-toggle {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 44px;
+  color: var(--muted);
+  white-space: nowrap;
+}
+.captain-toggle input { width: 17px; height: 17px; accent-color: var(--accent); }
+.roster-list-heading,
+.roster-row {
+  display: grid;
+  grid-template-columns: minmax(180px, 1.8fr) minmax(110px, 0.9fr) minmax(100px, 0.7fr) 80px;
+  align-items: center;
+  gap: 14px;
+}
+.roster-list-heading {
+  padding: 14px 12px 9px;
+  color: var(--muted);
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+}
+.roster-list { display: grid; gap: 6px; }
+.roster-row {
+  min-height: 48px;
+  padding: 7px 12px;
+  border: 1px solid rgba(255,255,255,0.07);
+  border-radius: 8px;
+  background: rgba(255,255,255,0.025);
+}
+.roster-player-name { min-width: 0; display: flex; align-items: center; gap: 9px; font-weight: 700; }
+.roster-player-photo { flex: 0 0 56px; width: 56px; height: 66px; padding: 3px; border-radius: 8px; background: #e6eaf0; object-fit: contain; object-position: center top; }
+.captain-tag {
+  padding: 3px 6px;
+  border-radius: 4px;
+  background: rgba(255,216,122,0.13);
+  color: #ffda7f;
+  font-size: 0.64rem;
+  font-weight: 850;
+  letter-spacing: 0.07em;
+}
+.roster-role, .roster-category { color: var(--muted); font-size: 0.88rem; }
+.roster-category { color: var(--accent-2); }
+.remove-player {
+  justify-self: end;
+  padding: 7px 9px;
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 6px;
+  background: transparent;
+  color: #ffaaa0;
+  cursor: pointer;
+  font-size: 0.76rem;
+}
+.remove-player:hover { border-color: var(--danger); background: rgba(255,140,124,0.08); }
+.roster-message { min-height: 1.4em; margin: 12px 0 4px; color: var(--accent); }
+.roster-message.error { color: var(--danger); }
+.roster-source { margin: 12px 0 4px; font-size: 0.8rem; }
+.roster-source-link { color: var(--accent-2); font-size: 0.85rem; }
+
+@media (max-width: 760px) {
+  .roster-summary { min-height: 0; }
+  .roster-toolbar { grid-template-columns: 1fr; gap: 14px; }
+  .roster-team-title { padding-left: 66px; }
+  .roster-team-logo { width: 54px; height: 54px; }
+  .add-player-form { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .player-name-field { grid-column: 1 / -1; }
+  .roster-list-heading { display: none; }
+  .roster-row { grid-template-columns: minmax(0, 1fr) auto; gap: 4px 10px; padding: 10px; }
+  .roster-player-name { grid-column: 1; }
+  .roster-role { grid-column: 1; }
+  .roster-category { grid-column: 1; }
+  .remove-player { grid-column: 2; grid-row: 1 / span 3; }
+}
+
+.roster-player-name { flex-wrap: wrap; overflow-wrap: anywhere; }
+.roster-team-logo { object-position: center; }

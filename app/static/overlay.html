@@ -1,9 +1,45 @@
-<!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>CricketOBS live score overlay</title><link rel="stylesheet" href="/static/style.css"></head>
-<body class="overlay"><main class="canvas">
-<header><b>CRICKET<span>OBS</span></b><span class="badge">LIVE SCORE • MANUAL UPDATES</span><span id="connection">CONNECTING</span></header>
-<section class="hero"><div class="eyebrow">CRICKET SCOREBOARD</div><h1 id="teams">Valley Falcons vs Summit Strikers</h1><p>Score-only broadcast • Operator-entered match updates</p></section>
-<section class="scorecard"><div class="scoretop"><span id="innings">INNINGS 1</span><span id="status">PAUSED</span></div><h2 id="batting">Valley Falcons</h2><div class="score"><strong id="score">0 / 0</strong><span><b id="overs">0.0</b> / <span id="limit">20</span> OVERS</span></div><div class="metrics"><span>RUN RATE <b id="rate">0.00</b></span><span id="chase">FIRST INNINGS</span><span id="freehit"></span></div><div id="batters"></div><div class="recent" id="recent"></div></section>
-<aside><div class="eyebrow">MATCH CENTRE</div><h2>Every ball.<br>One story.</h2><p id="summary">Manual score entry for your cricket broadcast.</p><div id="previous"></div></aside>
-<footer><span class="badge">LIVE SCORE</span><span id="commentary">Waiting for the scorer…</span></footer>
-</main><script src="/static/live.js"></script></body></html>
+	<!doctype html>
+	<html lang="en">
+		<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width,initial-scale=1">
+			<title>CricketOBS | Live scorebar</title>
+			<link rel="stylesheet" href="/static/overlay-scorebar.css?v=overlay-ui-3">
+		</head>
+		<body class="broadcast-overlay">
+			<main class="overlay-canvas">
+<section id="broadcast-scene" class="broadcast-scene" hidden></section>
+<div id="connection" class="overlay-connection" role="status">Connecting...</div>
+				<header class="match-locator">
+					<div class="league-label">NEPAL PREMIER LEAGUE</div>
+					<div class="venue-label"><span class="venue-pin" aria-hidden="true">●</span><span id="venue">Tribhuvan University International Cricket Ground, Kirtipur</span></div>
+					<div class="status-label" id="status">LIVE</div>
+				</header>
+
+				<section class="scorebar" id="scorebar" aria-label="Live cricket score">
+					<div class="scorebar-main">
+						<div class="batting-team">
+							<div class="team-mark" id="team-mark"><img id="team-logo" alt=""><span id="team-abbr">KTM</span></div>
+							<div class="team-name-wrap"><small>BATTING</small><strong id="batting">Kathmandu Gurkhas</strong></div>
+						</div>
+						<div class="score-total"><strong id="score">0/0</strong></div>
+						<div class="score-overs"><small>OVERS</small><strong><span id="overs">0.0</span><span class="over-limit">/<span id="limit">20</span></span></strong></div>
+						<div class="score-rate"><small>RUN RATE</small><strong id="rate">0.00</strong></div>
+						<div class="innings-summary" id="summary">1st innings · vs Pokhara Avengers</div>
+					</div>
+
+					<div class="scorebar-details">
+						<section class="batter-list" id="batters" aria-label="Batters">
+							<div class="batter-row on-strike"><span class="strike-marker">▶</span><strong>KTM Player 1</strong><b>0 <small>(0)</small></b></div>
+							<div class="batter-row"><span class="strike-marker">▶</span><strong>KTM Player 2</strong><b>0 <small>(0)</small></b></div>
+						</section>
+						<section class="bowling-summary">
+							<div class="bowling-player"><small>BOWLING</small><strong id="bowling-team">Pokhara Avengers</strong></div>
+							<div class="bowling-figures"><small>BOWLER</small><strong id="bowler-name">Not assigned</strong></div>
+						</section>
+					</div>
+				</section>
+			</main>
+			<script src="/static/overlay.js?v=overlay-ui-3"></script>
+		</body>
+	</html>

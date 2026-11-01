@@ -44,9 +44,10 @@ or use `--port 8001` and change every dashboard/overlay URL accordingly.
 1. Start CricketOBS first. In OBS create a scene, then add a **Browser** source.
 2. Leave “Local file” unchecked. Set URL to
    **http://127.0.0.1:8000/overlay**.
-3. Set **Width 1920**, **Height 1080**, and FPS **30**. This is a full-frame,
-   opaque 16:9 graphic; match your OBS canvas to 1920×1080.
-4. Fit the source to the canvas if needed. Keep the live score label visible.
+3. Set **Width 1920**, **Height 1080**, and FPS **30**. The scorebar has a
+   transparent background so the gameplay remains visible behind it; match your
+   OBS canvas to 1920×1080.
+4. Fit the source to the canvas if needed. Keep the lower scorebar inside the safe area.
 5. Enter a delivery in the dashboard and confirm the score updates in OBS.
 
 OBS handles encoding and YouTube streaming. Connect your own channel in OBS,
@@ -78,8 +79,11 @@ The dashboard sends manual outcomes to two or more live WebSocket viewers.
 ## Structure and API
 
 - `app/engine.py`: cricket innings and serializable score state.
-- `app/main.py`: FastAPI lifecycle, manual HTTP controls and WebSockets.
+- `app/main.py`: FastAPI lifecycle, manual HTTP controls, roster API, and WebSockets.
+- `app/database.py`: SQLite roster storage and idempotent initial seeding.
+- `app/npl_2026_rosters.json`: NPL Season 3 team/player seed data and source metadata.
 - `app/static/`: original HTML/CSS/JavaScript dashboard and 1920×1080 overlay.
+- `data/cricketobs.sqlite3`: generated local database; player edits persist here.
 - `tests/`: engine and HTTP/WebSocket tests.
 - `requirements.txt`: pinned direct dependencies; `requirements-lock.txt`: full
   tested environment snapshot for reproducible installation.
@@ -95,8 +99,15 @@ queue. The frontend reconnects with backoff. `POST /api/control` accepts JSON:
 
 Actions: `delivery` (`0`,`1`,`2`,`3`,`4`,`6`,`W`,`Wd`,`Nb`), `undo`, and `reset`
 (`team_a`, `team_b`, `overs`). Explore schemas at http://127.0.0.1:8000/docs.
-Refreshing a page does not reset a match. Restarting the server does. State is
-in memory, with no database.
+`GET /api/roster` returns the eight NPL 2026 Season 3 teams and their saved squads.
+`POST /api/roster/{team_slug}/players` adds a player, and
+`DELETE /api/roster/{team_slug}/players/{player_id}` removes one. Roster changes
+are stored in `data/cricketobs.sqlite3` and survive server restarts; the database
+is seeded on first startup from `app/npl_2026_rosters.json`. The imported player
+list, team logos, and portraits are attributed to NPLT20League.com in the roster
+page and seed file. The site identifies itself as independent and not affiliated
+with the official NPL. Match score state remains in memory and resets when the
+server restarts.
 
 ## Scoring rules and limits
 
@@ -116,8 +127,9 @@ immediate. The final striker indicator is hidden after completion.
 Run **one server worker**, on loopback only, for a trusted local operator.
 No authentication, persistence, or multi-worker synchronization is provided.
 Browser commands with a mismatched Origin are rejected; this is not an
-internet-facing administration service. No external frontend libraries, fonts,
-or images are needed by the overlay/dashboard.
+internet-facing administration service. The overlay has no external frontend
+library or font dependency; NPL team logos and player portraits are loaded from
+NPLT20League.com and require an internet connection.
 
 ## Future licensed API integration
 
@@ -130,3 +142,28 @@ and stale-feed indicators. Add contract tests and persistence before live use.
 
 WebSocket implementation reference:
 [FastAPI official documentation](https://fastapi.tiangolo.com/advanced/websockets/).
+
+## Studio and OBS scene controls
+
+Keep OBS pointed at the same /overlay URL. The On-air overlay buttons on every
+studio page switch that shared output between Live score, Countdown, Teams,
+Squads, Playing XI, Toss and hidden graphics. The dashboard preview shows the
+same output as OBS. Scene choices and match data are shared through WebSockets.
+
+Select teams on Match info, save eleven players per side on Playing XI before
+scoring, and record the result on Toss. Saved XI names and available portraits
+appear in the scorebar and team sheets. Use dashboard outcome buttons for scoring;
+Start timer counts down once per second; Pause holds the remaining time. Scoring stays manual. Full-screen scenes use the
+saved stream title and background. Live score retains a transparent background.
+Match settings, XI, toss and scene choices reset when the server restarts;
+roster edits remain stored in SQLite.
+
+Frontend renderer checks: node --test tests/test_overlay.cjs
+
+Additional overlay scenes include Match summary (scores, rates, extras and recent
+balls), Innings break (chase target), and Match result. Result shows a waiting
+message until the match finishes. The visual style selector applies Classic
+(red/navy), Midnight (cyan/navy), or Minimal (white/green) to live score and
+full-screen graphics. Classic uses the configured scene background; Midnight and
+Minimal provide their own coordinated backgrounds. Neither scenes nor styles
+start the timer or change match scores.

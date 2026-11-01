@@ -3,6 +3,8 @@ from app.engine import Match
 
 def test_strike_and_over_notation():
     m = Match()
+    assert m.snapshot()['teams'] == ('Kathmandu Gurkhas', 'Pokhara Avengers')
+    assert m.innings[0].players[0].name == 'KTM Player 1'
     m.step('1')
     assert m.innings[0].striker == 1
     for _ in range(5):

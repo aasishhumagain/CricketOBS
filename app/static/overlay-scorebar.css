@@ -1,0 +1,373 @@
+*,
+*::before,
+*::after { box-sizing: border-box; }
+
+html,
+body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+}
+
+body.broadcast-overlay {
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
+	background: transparent !important;
+	color: #172033;
+	font-family: "Segoe UI", Arial, sans-serif;
+	font-variant-numeric: tabular-nums;
+}
+
+.overlay-canvas {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	background: transparent;
+}
+
+.match-locator {
+	position: absolute;
+	top: 2.8vh;
+	left: 1.9vw;
+	display: flex;
+	align-items: stretch;
+	max-width: 82vw;
+	height: 5.3vh;
+	min-height: 34px;
+	filter: drop-shadow(0 5px 7px rgba(0, 0, 0, 0.32));
+	color: #fff;
+	font-weight: 850;
+}
+
+.league-label,
+.venue-label,
+.status-label {
+	display: flex;
+	align-items: center;
+	white-space: nowrap;
+}
+
+.league-label {
+	gap: 0.6em;
+	padding: 0 1vw;
+	background: #c71636;
+	font-size: clamp(13px, 1.28vw, 23px);
+	letter-spacing: 0.035em;
+}
+
+.venue-label {
+	gap: 0.75em;
+	min-width: 0;
+	padding: 0 1.35vw;
+	background: rgba(25, 30, 43, 0.97);
+	font-size: clamp(12px, 1.15vw, 22px);
+}
+
+.venue-label > span:last-child {
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.venue-pin {
+	color: #f04e69;
+	font-size: 0.75em;
+}
+
+.status-label {
+	display: none;
+	padding: 0 0.85em;
+	background: #c71636;
+	font-size: clamp(10px, 0.76vw, 15px);
+	letter-spacing: 0.1em;
+}
+
+.scorebar {
+	position: absolute;
+	left: 1.9vw;
+	right: 3vw;
+	bottom: 4.2vh;
+	filter: drop-shadow(0 8px 13px rgba(0, 0, 0, 0.35));
+}
+
+.scorebar-main {
+	display: grid;
+	grid-template-columns: 16.7% 13.3% 5.5% 17.5% minmax(0, 1fr);
+	align-items: stretch;
+	min-height: 9.5vh;
+	background: rgba(12, 19, 37, 0.97);
+	color: #f8fafc;
+}
+
+.scorebar-main > div {
+	min-width: 0;
+	border-right: 1px solid rgba(255,255,255,0.12);
+}
+
+.batting-team {
+	display: grid;
+	grid-template-columns: minmax(42px, 30%) minmax(0, 1fr);
+	align-items: center;
+	align-content: center;
+	gap: 0.18vh;
+	padding: 0.6vh 1.4vw;
+	background: #d51f32;
+}
+
+.team-mark {
+	min-width: 0;
+	height: 100%;
+	display: grid;
+	grid-template-rows: minmax(0, 1fr) max-content;
+	justify-items: center;
+	align-items: center;
+	gap: 2px;
+	font-size: clamp(8px, 0.65vw, 12px);
+	font-weight: 900;
+	letter-spacing: 0.06em;
+	line-height: 1;
+	text-align: center;
+}
+
+.team-mark img {
+	width: 100%;
+	height: 100%;
+	max-height: 5.2vh;
+	object-fit: contain;
+}
+
+.team-mark img[hidden] { display: none; }
+
+.team-mark:not(.has-logo) #team-abbr {
+	overflow: hidden;
+	color: #fff;
+	font-size: clamp(19px, 2.4vw, 46px);
+	font-weight: 950;
+	line-height: 0.95;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.team-mark.has-logo #team-abbr { font-size: clamp(8px, 0.65vw, 12px); }
+
+.team-name-wrap { min-width: 0; display: grid; gap: 2px; }
+.team-name-wrap small,
+.score-overs small,
+.score-rate small,
+.bowling-player small,
+.bowling-figures small,
+.delivery-summary small {
+	color: inherit;
+	font-size: clamp(8px, 0.64vw, 12px);
+	font-weight: 850;
+	letter-spacing: 0.1em;
+}
+
+.team-name-wrap strong {
+	overflow: hidden;
+	font-size: clamp(10px, 0.9vw, 17px);
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.score-total,
+.score-overs,
+.score-rate {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 0.45vh 1vw;
+}
+
+.score-total { align-items: center; }
+.score-total strong {
+	font-size: clamp(33px, 4vw, 76px);
+	font-weight: 950;
+	line-height: 0.95;
+	letter-spacing: -0.035em;
+}
+
+.score-overs,
+.score-rate { gap: 0.35vh; }
+.score-overs strong { display: grid; gap: 0.2vh; font-size: clamp(19px, 2.2vw, 42px); line-height: 1; }
+.over-limit { color: #aeb8ca; font-size: 0.4em; }
+.score-rate strong { font-size: clamp(18px, 2vw, 38px); line-height: 1; }
+.innings-summary {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	padding: 0.5vh 1.7vw;
+	color: #ffd346;
+	font-size: clamp(14px, 1.65vw, 31px);
+	font-weight: 850;
+	text-align: right;
+}
+
+.scorebar-details {
+	display: grid;
+	grid-template-columns: 35.5% 28.5% minmax(0, 1fr);
+	min-height: 7.8vh;
+	background: #f1f3f8;
+	color: #192235;
+}
+
+.batter-list {
+	display: grid;
+	grid-template-rows: 1fr 1fr;
+	min-width: 0;
+	padding: 0.35vh 1.25vw;
+}
+
+.batter-row {
+	min-width: 0;
+	display: grid;
+	grid-template-columns: 1.25em minmax(0, 1fr) max-content;
+	align-items: center;
+	gap: 0.35em;
+	font-size: clamp(12px, 1.16vw, 22px);
+	line-height: 1.08;
+}
+
+.batter-row strong,
+.batter-row b {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.batter-row b { font-size: 1.02em; }
+.batter-row b small { color: #697386; font-size: 0.76em; font-weight: 650; }
+.strike-marker { color: #df243b; font-size: 0.84em; }
+.batter-row:not(.on-strike) .strike-marker { visibility: hidden; }
+
+.bowling-summary {
+	min-width: 0;
+	display: grid;
+	grid-template-columns: minmax(0, 1fr) max-content;
+	align-items: center;
+	gap: 0.8vw;
+	padding: 0.7vh 1.2vw;
+	border-left: 1px solid #c9ced7;
+}
+
+.bowling-player,
+.bowling-figures { min-width: 0; display: grid; gap: 2px; }
+.bowling-player small,
+.bowling-figures small { overflow: hidden; color: #747d8e; text-overflow: ellipsis; white-space: nowrap; }
+.bowling-player strong { overflow: hidden; font-size: clamp(12px, 1.2vw, 23px); text-overflow: ellipsis; white-space: nowrap; }
+.bowling-figures { text-align: right; }
+.bowling-figures strong { font-size: clamp(12px, 1.15vw, 22px); white-space: nowrap; }
+
+@media (max-width: 900px) {
+	.scorebar { left: 1.5vw; right: 1.5vw; bottom: 3vh; }
+	.scorebar-main { grid-template-columns: 19% 15% 8% 16% minmax(0, 1fr); min-height: 11vh; }
+	.scorebar-details { grid-template-columns: 40% 32% minmax(0, 1fr); min-height: 10vh; }
+}
+
+@media (max-width: 600px) {
+	.match-locator { top: 2vh; left: 2vw; height: 5vh; max-width: 96vw; }
+	.league-label { padding: 0 2vw; font-size: 11px; }
+	.venue-label { padding: 0 2vw; font-size: 10px; }
+	.status-label { display: none; }
+	.scorebar { left: 2vw; right: 2vw; bottom: 2vh; }
+	.scorebar-main { grid-template-columns: 28% 22% 13% 17% minmax(0, 1fr); min-height: 11vh; }
+	.batting-team { padding: 0.5vh 1.5vw; }
+	.team-mark img { max-height: 4.2vh; }
+	.team-mark:not(.has-logo) #team-abbr { font-size: clamp(18px, 5vw, 26px); }
+	.team-name-wrap small,
+	.score-overs small,
+	.score-rate small { font-size: 7px; }
+	.team-name-wrap strong { font-size: 9px; }
+	.score-total strong { font-size: clamp(25px, 8vw, 42px); }
+	.score-overs,
+	.score-rate { padding: 0.4vh 1vw; }
+	.score-overs strong { font-size: clamp(15px, 4.7vw, 24px); }
+	.score-rate strong { font-size: clamp(14px, 4vw, 20px); }
+	.innings-summary { padding: 0.3vh 1vw; font-size: clamp(9px, 2.7vw, 13px); }
+	.scorebar-details { grid-template-columns: 50% 50%; min-height: 10vh; }
+	.batter-list { padding: 0.3vh 1.4vw; }
+	.batter-row { grid-template-columns: 0.9em minmax(0, 1fr) max-content; gap: 0.2em; font-size: 10px; }
+	.bowling-summary { grid-template-columns: minmax(0, 1fr); padding: 0.5vh 1.8vw; }
+	.bowling-player small,
+	.bowling-figures small { font-size: 7px; }
+	.bowling-player strong,
+	.bowling-figures strong { font-size: 10px; }
+	.bowling-figures { display: none; }
+}
+[hidden] { display:none !important; }
+.status-label { display:flex; }
+.batting-team { grid-template-columns:clamp(42px,4vw,78px) minmax(0,1fr); gap:.65vw; padding:.6vh .8vw; }
+.team-mark { height:8vh; grid-template-rows:minmax(0,1fr) 1em; }
+.team-mark .scorebar-logo { display:block; width:100%; height:100%; max-height:6.5vh; object-fit:contain; object-position:center; padding:2px; }
+.scorebar-abbr { font-size:clamp(9px,.7vw,14px); }
+.scorebar-details { grid-template-columns:58% 42%; }
+.batter-identity { display:flex; align-items:center; gap:.5vw; min-width:0; }
+.batter-photo { width:2.6vw; height:3.5vh; flex:0 0 2.6vw; object-fit:contain; object-position:center top; }
+.batter-identity strong { min-width:0; }
+.overlay-connection { position:absolute; top:10vh; left:2vw; color:#fff; background:#9e2331; padding:8px 14px; font-size:16px; }
+.broadcast-scene { position:absolute; inset:0; padding:4vh 5vw; color:#edf5fb; overflow:hidden; }
+.scene-eyebrow { color:#8feab1; font-size:1.3vw; letter-spacing:.15em; text-transform:uppercase; }
+.scene-title { font-size:3.2vw; margin:1vh 0 2vh; }
+.scene-countdown { font-size:9vw; font-weight:800; line-height:1; text-align:center; margin:2vh 0 4vh; font-variant-numeric:tabular-nums; }
+.scene-teams { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:3vw; }
+.scene-team { min-width:0; padding:1.5vh 1.5vw; background:rgba(255,255,255,.05); border:1px solid #355064; border-radius:1vw; }
+.scene-team-heading { display:flex; align-items:center; gap:1.2vw; min-width:0; }
+.scene-team-heading h2 { font-size:2vw; margin:0; }
+.scene-logo { display:block; flex:0 0 7vw; width:7vw; height:10vh; padding:.3vw; object-fit:contain; object-position:center; }
+.media-fallback { display:grid; place-items:center; font-size:1vw; text-align:center; }
+.scene-players { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:.6vh 1vw; margin-top:1.5vh; }
+.scene-player { display:flex; align-items:center; gap:.5vw; min-width:0; font-size:1.05vw; line-height:1.15; }
+.scene-player span { overflow-wrap:anywhere; }
+.scene-portrait { width:3.2vw; height:5.6vh; flex:0 0 3.2vw; object-fit:contain; object-position:center top; border-radius:.3vw; background:#e6eaf0; padding:2px; }
+.scene-toss { padding:4vh 2vw; text-align:center; font-size:2.5vw; color:#ffd346; }
+
+/* Full-frame match centre, break and result graphics. */
+.summary-teams { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:3vw; margin-top:3vh; }
+.summary-team { display:grid; justify-items:center; align-content:center; gap:1vh; min-width:0; padding:3vh 2vw; border:1px solid #355064; border-radius:1vw; background:rgba(255,255,255,.05); text-align:center; }
+.summary-logo { display:block; width:9vw; height:15vh; object-fit:contain; object-position:center; }
+.summary-team h2 { font-size:2vw; margin:1vh 0; }
+.summary-total { font-size:5vw; line-height:1; font-weight:900; font-variant-numeric:tabular-nums; }
+.summary-overs { margin:1vh 0; color:#a8bdc7; font-size:1.3vw; }
+.summary-headline { margin-top:3vh; padding:2vh 2vw; border-left:.4vw solid #ffd346; background:rgba(255,211,70,.08); font-size:2vw; font-weight:700; text-align:center; }
+.summary-stats { display:grid; grid-template-columns:repeat(3,1fr); gap:2vw; margin-top:2vh; }
+.summary-stat { display:grid; gap:.7vh; padding:1.5vh 2vw; border-top:1px solid #355064; }
+.summary-stat small { color:#a8bdc7; font-size:1vw; text-transform:uppercase; letter-spacing:.1em; }
+.summary-stat strong { font-size:2vw; }
+.summary-recent { display:flex; align-items:center; justify-content:center; gap:.6vw; margin-top:2vh; font-size:1.1vw; }
+.summary-recent > span { margin-right:1vw; color:#a8bdc7; }
+.delivery-chip { display:grid; place-items:center; width:2.5vw; height:2.5vw; border-radius:50%; background:#263c50; color:white; }
+.delivery-chip.is-boundary { background:#8feab1; color:#09231b; }
+.delivery-chip.is-wicket { background:#d51f32; }
+/* Midnight: cyan edges, deep navy surfaces, rounded scorebar. */
+.scorebar[data-theme="midnight"] { border-radius:1vw; overflow:hidden; border:1px solid #38d6e6; }
+.scorebar[data-theme="midnight"] .scorebar-main { background:rgba(5,19,35,.97); }
+.scorebar[data-theme="midnight"] .batting-team { background:#073e50; border-bottom:3px solid #38d6e6; }
+.scorebar[data-theme="midnight"] .innings-summary { color:#7bf0ee; }
+.scorebar[data-theme="midnight"] .scorebar-details { background:#102a40; color:#edfaff; }
+.scorebar[data-theme="midnight"] .bowling-summary { border-color:#2a536b; }
+.scorebar[data-theme="midnight"] .bowling-player small,
+.scorebar[data-theme="midnight"] .bowling-figures small,
+.scorebar[data-theme="midnight"] .batter-row b small { color:#9ec7dc; }
+.scorebar[data-theme="midnight"] .strike-marker { color:#38d6e6; }
+.broadcast-scene[data-theme="midnight"] { background:radial-gradient(ellipse at top right,#0b4259,transparent 65%),#061422 !important; }
+.broadcast-scene[data-theme="midnight"] .scene-eyebrow { color:#7bf0ee; }
+.broadcast-scene[data-theme="midnight"] .scene-team,
+.broadcast-scene[data-theme="midnight"] .summary-team { border-color:#21748b; background:rgba(10,51,71,.65); box-shadow:0 1vh 3vh #0003; }
+.broadcast-scene[data-theme="midnight"] .summary-headline { border-color:#38d6e6; background:#0b3b4f; }
+.broadcast-scene[data-theme="midnight"] .scene-toss { color:#7bf0ee; }
+/* Minimal: clean light surfaces, restrained green accents. */
+.scorebar[data-theme="minimal"] { filter:drop-shadow(0 3px 8px #0003); }
+.scorebar[data-theme="minimal"] .scorebar-main { background:#fff; color:#132e28; border-top:4px solid #217755; }
+.scorebar[data-theme="minimal"] .scorebar-main > div { border-color:#d9e7e1; }
+.scorebar[data-theme="minimal"] .batting-team { background:#e9f4ef; }
+.scorebar[data-theme="minimal"] .innings-summary { color:#217755; }
+.scorebar[data-theme="minimal"] .scorebar-details { background:#f4f8f6; color:#132e28; }
+.scorebar[data-theme="minimal"] .strike-marker { color:#217755; }
+.broadcast-scene[data-theme="minimal"] { background:#f2f6f3 !important; color:#15372b; }
+.broadcast-scene[data-theme="minimal"] .scene-eyebrow { color:#217755; }
+.broadcast-scene[data-theme="minimal"] .scene-team,
+.broadcast-scene[data-theme="minimal"] .summary-team { background:#fff; border-color:#d2e2d9; border-radius:.3vw; }
+.broadcast-scene[data-theme="minimal"] .summary-headline { background:#e2eee7; border-color:#217755; }
+.broadcast-scene[data-theme="minimal"] .summary-overs,
+.broadcast-scene[data-theme="minimal"] .summary-stat small,
+.broadcast-scene[data-theme="minimal"] .summary-recent > span { color:#4e6e60; }
+.broadcast-scene[data-theme="minimal"] .scene-toss { color:#217755; }

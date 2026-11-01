@@ -4,3 +4,6 @@ __pycache__/
 dist/
 *.pyc
 *.log
+data/*.sqlite3
+data/*.sqlite3-shm
+data/*.sqlite3-wal
